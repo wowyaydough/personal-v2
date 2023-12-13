@@ -1,0 +1,74 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header div.wrap {
+  
+  /*! align-items: center; */
+}
+header div.wrap h1 {
+  
+}
+header div.wrap h1 a {
+  font-size: 0;
+  width: 45px;
+  height: 35px;
+  display: block;
+  background-image: url(../img/logo.svg);
+}
+header div.wrap h1 a::after{
+  content: "";
+  width: 140px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../img/logotext.svg);
+  margin-left: 45px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  
+  background-size: 91%;
+  background-position-y: 8px;
+}
+header div.wrap ul.gnb {
+  align-items: center;
+}
+header div.wrap ul.gnb li {
+  
+}
+header div.wrap ul.gnb li a {
+  padding: 10px 20px;
+}
+header div.wrap ul.gnb li a:hover {
+ color: #f0c77b;
+}
+header div.wrap div.right {
+  gap: 20px;
+  font-size: 13px;
+  align-items: center;
+}
+header div.wrap div.right ul.lang {
+  
+}
+header div.wrap div.right ul.lang li {
+  
+}
+header div.wrap div.right ul.lang li a {
+  
+  padding: 10px 5px;
+}
+header div.wrap div.right ul.lang li:nth-child(1) {
+  
+}
+header div.wrap div.right ul.lang li:nth-child(1) a {
+  
+  color: #a29f9f;
+}
+header div.wrap div.right > a.ham {
+  font-size: 0;
+  width: 35px;
+  height: 7px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}

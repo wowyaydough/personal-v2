@@ -1,0 +1,16 @@
+section#footer{
+  background-color: black;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+section#footer .personal{
+}
+section#footer .personal h6{
+   
+  font-weight: bold;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+section#footer .personal p{color: #6b6b6b;font-size: 13px;padding-bottom: 40px;font-weight: bold;}

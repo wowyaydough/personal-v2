@@ -1,0 +1,61 @@
+section#benefit {
+
+}
+section#benefit::before{
+  content:"";
+  display: block;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -350px;
+  left: calc(50% - 350px);
+}
+
+
+
+section#benefit .wrap {
+
+  padding-top: 150px;
+  box-sizing: border-box;
+  transform: translatex(-105%);
+}
+
+section#benefit .wrap::before {
+  content:"";
+  display: block;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -140px;
+  left: calc(50% - 140px);
+
+}
+
+section#benefit .wrap>*{
+  
+}
+section#benefit .wrap h2{
+  
+}
+section#benefit .wrap p{
+  
+}
+section#benefit::after{
+  content:"";
+  display: block;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -245px;
+  left: calc(50% - 245px);
+}  
+
+section#benefit .wrap h2.h2 span.block {
+
+}

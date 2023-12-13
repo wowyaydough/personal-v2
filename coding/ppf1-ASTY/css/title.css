@@ -1,0 +1,37 @@
+section#title {}
+section#title .flex{
+  min-height: 850px;
+  background-color: white;
+  max-width: 1908px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  background-image: 
+    url(../img/bbs_02.jpg),url(../img/bbs_03.jpg),url(../img/bbs_04.jpg),url(../img/bbs_05.jpg);
+  background-repeat: no-repeat;
+  background-position-x:24%,6%,72%,83%;
+  background-position-y:19%,90%,19%,99%;
+  background-size: 4%,32%,4%,9%; 
+}
+
+section#title .flex ul{
+  width: 410px;
+  height: 273px;
+  margin: 140px auto;
+}
+
+section#title .flex ul li{
+padding-top:125px;
+}
+
+section#title ul li span {
+  
+}
+
+section#title ul li span img{
+  
+}
+
+section#title .wrap {  
+  height: 100%;
+}
+

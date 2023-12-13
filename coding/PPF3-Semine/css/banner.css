@@ -1,0 +1,59 @@
+section#banner {
+
+}
+section#banner .wrap {
+
+}
+section#banner .wrap ul {
+
+  width: 88%;
+}
+
+section#banner .wrap ul li .banner {
+
+  align-items: center;
+}
+
+section#banner .wrap ul li .banner h2::before{
+  content:"";
+  background-image: url(../img/banner0.png);
+  width: 170px;
+  height: 94px;
+  display: inline-block;
+}
+section#banner .wrap ul li .banner h2 {
+ 
+  align-items: center;
+
+  display: flex;
+}
+section#banner .wrap ul li .banner a {
+  border: 1px solid #dfdfdf;
+  border-radius: 42px;
+  width: 120px;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+section#banner .wrap ul li .banner a::after{
+  content:"";
+  background-image: url(../img/right.png);
+  background-repeat: no-repeat;
+  background-size: 72%;
+  background-position: center;
+  display: block;
+  width: 20px;
+  height: 24px;
+}
+section#banner .wrap ul li {
+
+  padding-right: 66px;
+}
+section#banner .wrap ul li a {
+
+}
+section#banner .wrap ul li a img {
+
+}

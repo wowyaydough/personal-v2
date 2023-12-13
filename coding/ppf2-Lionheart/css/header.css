@@ -1,0 +1,75 @@
+body {
+
+}
+body header {
+  padding: 40px 0 40px 0;
+  height: 30px;
+}
+body header .flex {
+  align-items: center;
+  position: relative;
+}
+
+header .flex ul.logo{
+transform: translateX(20%);
+}
+
+body header .flex video{
+  position: absolute;
+}
+
+body header .flex h2 {
+  font-size: 0;
+  background-image: url(../img/logo.svg);
+  width: 195px;
+  height: 40px;
+  color: white;
+  margin-left: 30px;
+}
+body header .flex ul.menu {
+  font-size: 18px;
+  transform: translateX(107%);
+  font-weight: bold;
+}
+body header .flex ul.menu li {
+
+}
+body header .flex ul.menu li a {
+  color: white;
+  padding: 10px 20px;
+}
+body header .flex ul.lang {
+  font-size: 18px;
+  transform: translateX(-45%);
+  font-weight: bold;
+}
+body header .flex ul.lang li {
+
+}
+body header .flex ul.lang li a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+body header .flex ul.lang li a.en {
+  color: #818085;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+header .title_text{
+  
+  height: 380px;
+}
+header .title_text h1{
+transform: translateX(65%) translateY(40%);
+position: absolute;
+color: white;
+font-size: 65px;
+text-align: center;
+font-weight: bold;
+line-height: 1.5;
+}

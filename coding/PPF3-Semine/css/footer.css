@@ -1,0 +1,94 @@
+footer {
+
+}
+footer section#footer {
+
+}
+footer section#footer .wrap {
+
+  width: 100%;
+}
+footer section#footer .wrap .footL {
+
+}
+footer section#footer .wrap .footL ul.menu {
+
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+footer section#footer .wrap .footL ul.menu li {
+
+}
+footer section#footer .wrap .footL ul.menu li a {
+
+}
+footer section#footer .wrap .footL ul.add {
+  color: #666666;
+  padding-bottom: 23px;
+}
+footer section#footer .wrap .footL p.h6_B{
+  
+  color: #c7c7c7;
+}
+
+footer section#footer .wrap .footL ul.add li {
+
+}
+footer section#footer .wrap .footL ul.add li h6 {
+
+}
+.line{
+  color: #666666;
+  background-color: #666666;
+  border-right: 1px solid;
+  margin: 0 12px;
+}
+
+footer section#footer .wrap .footL li p {
+
+}
+footer section#footer .wrap .footR {
+
+}
+footer section#footer .wrap .footR ul.sns {
+
+  padding-right: 26px;
+}
+footer section#footer .wrap .footR ul.sns li {
+
+  padding-right: 21px;
+}
+footer section#footer .wrap .footR ul.sns li a {
+  font-size: 0;
+}
+footer section#footer .wrap .footR ul.sns li a i{
+  
+  color: #999;
+  font-size: 31px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section#footer .wrap .footR select {
+
+  height: 48px;
+  border-radius: 26px;
+  text-align: center;
+}
+footer section#footer .wrap .footR select option {
+
+}
+.dot{
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0 8px;
+  background-color: #a8a6a6;
+}

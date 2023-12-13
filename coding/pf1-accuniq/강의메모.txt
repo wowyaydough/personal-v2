@@ -1,0 +1,572 @@
+마크업 : 컨텐츠의 의미,역활 표시
+h1태그 : 제일 중요한 제목 (대제목)
+li태그 : list 목록,항목을 의미
+li들을 묶음 -> ul태그 unordered list
+들여쓰기
+
+p : 문단,설명 paragraph
+
+
+html문서는
+마크업된 컨텐츠를 담고 있는 문서
+
+젠코딩(마크업속도를 10배증가시키는 코딩방법)
+
+css : cascading style sheet (스타일문서) 
+
+/ css구문형식
+마크업태그(선택자){
+    속성:값;
+}
+
+/ a태그 : 문서연결 anchor
+
+/ 마크업태그 주석 <!--    -->
+
+/ 상대경로
+  html문서기준으로 파일의 위치를 지정
+
+/ header태그 : 문서의 상단영역을 의미
+
+/ div태그 : division 분할,분할된 영역
+
+/ 하위 선택자
+  경기도 안양시 : 경기도안에 있는 안양시
+  div h2 : div안에 있는 h2
+
+/ 블럭태그 : 블럭태그의 속성
+  .태그는 사각박스형태이다
+  .블럭태그는 수평으로 꽉찬다
+  .블럭태그는 쌓인다(수직)
+  .블럭태그는 너비와 높이를 지정할 수 있다
+  .블럭태그는 컨텐츠의 높이만큼 커진다
+
+
+/ 수평정렬하기 : 수직으로 배치된 태그를 수평으로 정렬하기
+  display:flex;
+  부모태그에게 지정하여 자식들을 수평으로 정렬시킴
+  바로 아래에 있는 자식들만 정렬시킴
+
+
+  / 5회차 ------------------------
+
+
+ /  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap
+
+  / 배경이미지 지정하기
+  background-image: url(이미지주소/이미지이름.확장자);
+  background-size: cover;
+  background-position: center bottom;
+
+  / 태그에 이름 지정
+    같은 태그가 반복되기에 이름 지정하여 각각 이름별로
+    별도의 스타일을 지정하기 위함
+
+    1 id지정   <태그 id="영문">
+          css표기 태그#영문{
+
+                  }
+    2 class지정 <태그 class="영문">
+           css표기 태그.영문{
+
+                  }
+
+/ 위치지정 position:absolute
+/ 칼라지정 rgba(red,green,blue,alpha)
+
+미) height:100%의미
+
+main태그 : 페이지의 주요내용을 담는 영역
+footer태그 : 하단영역
+section : 절,장
+
+header>h1+div+main+footer
+
+/공통스타일파일 생성하기
+ common.css
+
+/클래스 class : 태그에 지정하는 이름
+  - 공용이름,한 문서에 여러번 사용할 수 있다
+
+/ 텍스트 스타일
+  color: white; //글자색상
+  font-size: 33px; //글자크기
+  text-transform: capitalize; //첫글자 대문자로
+  letter-spacing: 2px; //철자간격
+  font-weight: bold; // 글자두께
+
+/ 웹폰트 지정하기 (구글폰트) 
+
+/ css cascading style sheet 계단식의...
+
+
+/햄버거 버튼 만들기 1 (배경이미지로)
+
+ - 자식선택자 개념
+ - 글자없애기 font-size:0;
+ - 너비높이 지정
+ - 웹아이콘 다운로드
+ - background-image: url(../img/menu.svg);
+../는 상위폴더이동을 의미
+
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  / svg파일 색상변경
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+    <style>
+      .ham{
+          fill:white;
+      }
+    </style>
+    <path class="ham" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+  </svg>
+
+// 11.14일 진도
+
+  / padding 안쪽 여백
+
+    padding을 주면 영역(크기)이 커진다
+    padding을 주면 안쪽요소가 밀린다
+
+ / margin : 바깥 여백 
+   다른 요소와의 거리가 생긴다
+
+ / box-sizing: border-box;
+   padding을 준 경우 기존너비값이 증가한다
+   기존 너비값을 그대로 유지하려는 경우에
+   box-sizing: border-box;를 준다. 
+
+/ border-radius: 30px;  모서리를 둥글게
+
+/ 공통패딩지정하기
+  .padding50{
+  padding: 50px;
+  }
+  .paddingT50{
+    padding-top: 50px;
+  }
+  .paddingR50{
+    padding-right: 50px;
+  }
+  .paddingB50{
+    padding-bottom: 50px;
+  }
+  .paddingL50{
+    padding-left: 50px;
+  }
+
+<section id="about" class="paddingT50 paddingB50">
+
+class명은 여러 개 줄수 있다
+
+/ 요소간의 간격조절
+  padding
+  margin
+  line-height:줄간격
+  line-height: 2; -> 기본글자크기(16px)의 두배를 의미
+  글자는 글높이의 중간에 배치가 됨
+  위아래여백이 생긴다
+
+ / 글자 중앙정렬 text-align:center; 
+
+
+ / 가상선택자 ::before, ::after
+
+
+/ 태그는 2종류가 있다
+  블럭 태그와 
+  인라인 태그
+
+.블럭태그는 너비와 높이를 지정할 수 있다.
+           수직으로 쌓인다.
+.인라인 태그는 너비,높이를 지정할 수 없다
+           수평으로 배치된다.
+  inline : line안에...         
+ ex) a태그 ::before,::after
+
+ display:block; 블럭태그화
+ display:inline-block; 인라인속성과 블럭속성들 줌
+                       (한줄로)    (너비,높이)   
+
+
+skill.css ---------------------------------------
+section#skill{
+
+}
+section#skill .wrap{
+   
+}
+section#skill .wrap h2{
+  margin-bottom: 20px;
+}
+section#skill .wrap h2::before{
+  content: "/";
+  color: orange;
+  font-size: 25px;
+  width: 29px;
+  display: inline-block;
+}
+section#skill .wrap p{
+   
+  margin-bottom: 20px;
+}
+section#skill .wrap ul{
+   
+  justify-content: center;
+  gap: 40px;
+}
+section#skill .wrap ul li{
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section#skill .wrap ul li::before{
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+// 11월 15일
+
+/span태그 : 인라인요소(텍스트나 a,img들) 묶음
+
+  common.css ---------------------------
+
+      /* 가상선택자 */
+      main .h2::before{
+        content: "";
+        font-size: 25px;
+        height: 3px;
+        width: 60px;
+        display:block;
+        background-color: orange;
+        margin-bottom: 10px;
+      }
+      .sasun::before{
+        content: "/";
+        margin-right: 20px;
+      }
+
+      /* 블럭,인라인 */
+      .block{
+        display: block;
+      }
+
+      /* 정렬 */
+      .center{
+        text-align: center;
+      }
+
+/ 웹사이트의 이미지소스 가져오기
+  파이어폭스의 메뉴
+  도구 > 페이지 정보 > 미디어
+
+/ 포토샵 반복작업 등록 window > action  
+
+/ 태그의 순서 지정하기 :nth-child(번호)
+
+/ 포토샵 image > reveal 이미지 다보이게 하기
+
+/ img 이미지태그
+<img src="경로/이미지명.확장자" alt="이미지설명텍스트">
+
+/ display:flex의 특징
+  자식요소들의 너비가 줄어든다 >> 수평으로 배치하기 위해서(줄여야 옆에 공간이 생기니까)
+  (자식요소의 컨텐츠만큼) 
+
+/ 자식선택자 : 요소바로아래있는 요소를 의미함
+
+    skill.css -----------------------------------
+
+    section#skill .wrap ul{
+      justify-content: center;
+      gap: 40px;
+    }
+    section#skill .wrap ul li{
+      content: "";
+      width: 100px;
+      height: 100px;
+      display: block;
+      /*! background-color: #ccc; */
+      border-radius: 50%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    section#skill .wrap ul li::before{
+      content: "";
+      width: 100px;
+      height: 100px;
+      display: block;
+      /*! background-color: #ccc; */
+      /*! border-radius: 50%; */
+      margin-bottom: 10px;
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    section#skill .wrap ul li:nth-child(1)::before{
+      background-image: url(../img/html.png);
+    }
+    section#skill .wrap ul li:nth-child(2)::before{
+      background-image: url(../img/css.png);
+    }
+    section#skill .wrap ul li:nth-child(3)::before{
+      background-image: url(../img/jquery.png);
+    }
+    section#skill .wrap ul li:nth-child(4)::before{
+      background-image: url(../img/js.png);
+    }
+    section#skill .wrap ul li:nth-child(5)::before{
+      background-image: url(../img/html.png);
+    }
+    section#skill .wrap ul li:nth-child(6)::before{
+      background-image: url(../img/sass.png);
+    }
+    section#skill .wrap ul li:nth-child(7)::before{
+      background-image: url(../img/html.png);
+    }
+    section#skill .wrap ul li:nth-child(8)::before{
+      background-image: url(../img/html.png);
+    }
+
+   portfolio.css ------------------------------------
+
+    section#portfolio .wrap>ul{
+      margin-top: 30px;
+      background-color: #eee;
+      border-radius: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    section#portfolio .wrap ul li{
+      width: 70%;
+      margin: 0 auto;
+    }
+    section#portfolio .wrap ul li img{
+      width: 600px;
+    }
+  
+
+  // 11.16일 
+
+  ?추가설명필요/ flex-wrap
+
+  // 11.20일 ---------------------------------------
+
+  / sass플러그인(css선택자지정속도가 10배증가) 설치
+
+    - sass
+
+    - sass Lint
+
+    - file > Preferences > Setting 의 Setting.json 설정
+
+      {
+        "liveSassCompile.settings.formats":[
+            {
+                "format": "expanded",
+                "extensionName": ".css",
+                "savePath": "~/../css"
+            }
+        ],
+        "liveSassCompile.settings.excludeList": [ 
+            "**/node_modules/**",
+            ".vscode/**" 
+        ],
+        "liveSassCompile.settings.generateMap": 
+          false,
+        "liveSassCompile.settings.autoprefix": [
+            "> 1%",
+            "last 2 versions"
+        ],
+        "editor.fontSize": 14,
+        "editor.renderWhitespace": "all",
+        "editor.wordWrap": "on",
+        "emmet.triggerExpansionOnTab": true,
+        "editor.tabCompletion": "on",
+        "window.openFilesInNewWindow": "on",
+        "workbench.editor.enablePreview": false,
+        "editor.minimap.enabled": false,
+        "editor.tabSize": 3,
+        "window.zoomLevel": 3
+      }
+
+    - scss폴더 생성하기
+      .header.scss 파일생성
+
+    * 하단에 watch sass아이콘이 안보이면
+      설치한 플러그인들을 제거하고 재설치하기  
+
+    
+    / 메뉴 a가 있는 경우 메뉴간격은 a태그에 padding으로 조절한다
+      (gap이나 margin을 사용하지 않는다)
+
+
+/ hgroup : 연속되는 h태그를 묶음
+
+/ border-radius: 0 0 30px 30px; 둥근사각형
+/ box-shadow: 0 0 10px #ccc; 박스그림자
+
+/ 크기(width,height)에서 100%의 의미
+  : 상위요소에 꽉찬다
+
+  window(브라우저창)
+  html : 100%
+  body : 100%
+  div#title : 100%
+
+/ min-height: 600px;  최소높이
+
+
+/ svg배치하기
+   1 코드를 html안에 넣기
+   2 svg를 배경이미지로 넣기
+
+
+/ display:flex를 지정하면 자식들은 블럭속성을 갖는다
+
+/ svg파일 스타일링
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.61 50.81"><defs>
+<style>
+.icon-1{
+        fill:none; //면 투명
+        stroke:#f5f5f5; // 선 색상지정
+        stroke-miterlimit:20; // 선두께
+        }
+</style>
+
+?/ max-width 최대크기 
+
+/ position:absolute;시 상위요소를 기준으로 잡는다
+  상위요소에 position:relative를 지정한다
+  right:0; // 부모의 오른쪽기준
+  bottom:0; // 부모의 왼쪽기준
+?/ 요소들의 높낮이 설명
+    position지정시의 높낮이 변화 
+
+/ box-shadow: 0 10px 28px #ccc;
+
+ 
+/ 다중배경이미지 지정  
+ background-image: 
+     url(../img/logo.svg), url(../img/accuniq.svg);
+  background-repeat: no-repeat;
+  background-position-x:76%,center;
+  background-position-y: 75%, 103%;
+  background-size:35%,100%; 
+
+
+/ 스타일 우선순위
+ class보다 id가 우선적용된다
+  #title {
+   margin: 0 auto;
+  }
+ .marginB50{
+   margin-bottom: 50px !important;
+  }
+
+/ css지정방법
+ 외부스타일 link로 외부스타일파일 연결
+ 내부스타일 head태그안에 style태그로 지정
+ 태그내스타일 태그안에 style="속성:값;"
+
+ / flex-direction: row-reverse; 수평정렬시 반대로 
+
+ / width: calc(100% / 2);
+
+ /:not(요소) ~가 아닌
+  article:not(:first-child)  : 첫번째 자식이 아닌 article
+
+/display:grid; 그리드(테이블)형태의 정렬
+ 부모태그에게
+  display: grid;
+  grid-template-columns: 50% calc(50% - 50px);
+  grid-template-rows: auto auto 1fr;
+  column-gap: 50px;
+  row-gap: 24px;
+
+ 자식태그에게
+  grid-row: 1 / span 3;
+  grid-column: 2;
+
+
+/ transition : all 1s;
+  변이(변화) 
+  속성값의 차이에 따른 애니메이션
+  처음상태의 선택자에게 지정한다
+
+/ transform: scale(0.6);  
+
+/ overflow: hidden; 요소영역밖에 있는 콘텐츠 감추기
+
+/ transform의 특징
+  위치조정이나 크기등을 바꿔도 다른 요소에 영향을 주지 않는다
+
+/ flexible image : 유연한 이미지
+  이미지의 부모크기를 줄여도 이미지크기는 줄어들지 않는다
+  이때 부모크기 변경시 이미지크기도 같이 변경되게 하려면
+
+  section#connect .wrap ul li img {
+  width: 100%; // 100%값을 준다
+  }    
+  
+/ position을 설정한 요소가 제일 위에 위치한다.
+  z-index:숫자;  높낮이 조절
+   z-index는 position속성과 같이 사용해야 한다
+
+
+// 레이아웃(배열,배치,정렬)
+  / width,margin:0 auto 를 사용하여 큰 덩어리(영역)에 여백을 주고 중앙으로 정렬
+
+  / display:flex; (기본적으로 수평정렬,왼쪽정렬) :: 자식요소를 정렬할때 사용
+    justify-content:...;좌우정렬(중앙,왼쪽,오른쪽....)
+    align-items:수직정렬(위,가운데,아래로)
+
+  flex-direction:column; (정렬방향변경,수평,수직,꺼꾸로 수평,꺼꾸로 수직)
+   --> justify-content : 수직정렬담당으로 변경
+   --> align-items : 수평정렬 담당으로 변경되게
+  
+  flex-wrap:wrap; 자식요소가 줄바꿈됨..자식요소의 너비값이 유지
+
+  / 간격(여백)조절 
+    padding:요소들의 간격은 떨어지지 않고 안쪽 내용물에 간격이 지정
+    margin : 요소와 요소사이 간격이 생긴다
+    line-height:위아래 동일하게 여백생성
+
+// 11월 27일
+
+/   *메뉴의 간격 조절시 a태그에 padding이나 line-height로 조절하고
+    display:block처리한다.
+
+/ select 스타일링 https://www.daleseo.com/css-selects/
+
+
+/ position:fixed; 요소 고정하기
+  left,right,top,bottom으로 위치지정 
+  브라우저 화면을 기준으로 함.  
+
+/:hover 마우스 올린상태

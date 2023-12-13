@@ -1,0 +1,156 @@
+section#skill {
+  background-color: #2a98d9;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+section#skill::before{
+  content:"";
+  display: block;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -350px;
+  left: calc(50% - 350px);
+}
+
+
+section#skill .wrap{
+  margin-bottom: 50px;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+section#skill div.wrap ul li{
+  content:"";
+  height: 79px;
+  margin-bottom: 10px;
+  width: calc(100% / 8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+section#skill div.wrap ul li::before{
+  content:"";
+  width: 60px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+section#skill div.wrap ul li:nth-child(1)::before{
+  background-image: url(../img/html.png);
+}
+section#skill div.wrap ul li:nth-child(2)::before{
+  background-image: url(../img/css.png);
+  background-color:white;
+}
+section#skill div.wrap ul li:nth-child(3)::before{
+  background-image: url(../img/jq.png)
+}
+section#skill div.wrap ul li:nth-child(4)::before{
+  background-image: url(../img/js.png)
+}section#skill div.wrap ul li:nth-child(5)::before{
+  background-image: url(../img/z.png)
+}
+section#skill div.wrap ul li:nth-child(6)::before{
+  background-image: url(../img/ss.png)
+}section#skill div.wrap ul li:nth-child(7)::before{
+  background-image: url(../img/w3.png);
+  background-color: white;
+}
+section#skill div.wrap ul li:nth-child(8)::before{
+  background-image: url(../img/w2.png)
+}
+section#skill div.wrap ul li:nth-child(9)::before{
+  background-image: url(../img/ps.png)
+}section#skill div.wrap ul li:nth-child(10)::before{
+  background-image: url(../img/ai.png)
+}section#skill div.wrap ul li:nth-child(11)::before{
+  background-image: url(../img/pr.png)
+}section#skill div.wrap ul li:nth-child(12)::before{
+  background-image: url(../img/ae.png)
+}section#skill div.wrap ul li:nth-child(13)::before{
+  background-image: url(../img/vv.png);
+    background-color: white;
+}section#skill div.wrap ul li:nth-child(14)::before{
+  background-image: url(../img/f.png)
+}section#skill div.wrap ul li:nth-child(15)::before{
+  background-image: url(../img/gg.png)
+}section#skill div.wrap ul li:nth-child(16)::before{
+  background-image: url(../img/ov.png);
+  background-color: white;
+}section#skill div.wrap ul li:nth-child(17)::before{
+  background-image: url(../img/ai.png)
+}section#skill div.wrap ul li:nth-child(18)::before{
+  background-image: url(../img/w2.png)
+}
+section#skill div.wrap ul li:nth-child(19)::before{
+  background-image: url(../img/w2.png)
+}
+section#skill div.wrap ul li:nth-child(20)::before{
+  background-image: url(../img/w2.png)
+}
+section#skill div.wrap ul li:nth-child(21)::before{
+  background-image: url(../img/ov.png)
+}
+section#skill div.wrap ul li:nth-child(22)::before{
+  background-image: url(../img/w2.png)
+}
+section#skill div.wrap ul li:nth-child(23)::before{
+  background-image: url(../img/pr.png)
+}
+section#skill div.wrap ul li:nth-child(24)::before{
+  background-image: url(../img/ae.png)
+}
+section#skill .wrap::before {
+  content:"";
+  display: block;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -140px;
+  left: calc(50% - 140px);
+}
+
+section#skill .wrap ul.skills{
+  
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 70px;
+}
+
+section#skill .wrap>*{
+  
+}
+section#skill .wrap h2{
+  
+}
+section#skill .wrap p{
+  
+}
+section#skill::after{
+  content:"";
+  display: block;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -245px;
+  left: calc(50% - 245px);
+}  
+
+section#skill .wrap h2.h2 span.block {
+
+}

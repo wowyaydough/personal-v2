@@ -1,0 +1,165 @@
+footer {
+  background-color: white;
+  position: relative;
+}
+footer .wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-rows: auto 75px auto;
+  row-gap: 20px;
+}
+footer .wrap h1 {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+footer .wrap h1 a{
+  
+  font-size: 0;
+  background-image: url(../img/logo_footer.png);
+  width: 120px;
+  height: 78px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+footer .wrap ul.fnb {
+  padding: 8px;
+}
+footer .wrap ul.fnb li a{
+  padding:0 20px;
+  inline-height:2;
+  display: block;
+  font-size:13px;
+}  
+footer .wrap ul li {
+
+}
+footer .wrap ul li a:first-child{
+  padding-left:0;
+}
+footer .wrap ul.fnb li a:hover{
+color:#333;  
+}
+footer .wrap ul.sns{
+  grid-column: 4;
+  grid-row: 1;
+  padding: 8px;
+}
+footer .wrap ul.sns li{
+}
+
+footer .wrap u, footer .wrap .sns{
+  gap:15px;
+}
+
+footer .wrap u li a, footer .wrap ul.sns li a{
+  font-size: 0;
+}
+footer .wrap u li a, footer .wrap ul.sns li a i{
+  font-size:31px;
+  color:#999;
+}
+footer .wrap address {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  padding: 8px;
+  line-height: 1.6;
+  font-size: 12px;
+}
+
+footer .wrap address a{
+  font-size: 13px;
+}
+
+footer .wrap p{
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: auto 40%;
+  padding: 8px;
+}
+footer .wrap .combobox {
+
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  padding: 8px;
+  gap: 7px;
+}
+footer .wrap .combobox .partner {
+
+  /*! padding-right: 190px; */
+}
+footer .wrap .combobox .partner button {
+  margin-bottom: 9px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  background-image: url(../img/uparrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 165px;
+  background-position-y: 7px;
+}
+footer .wrap .combobox .partner dl {
+
+}
+footer .wrap .combobox .partner dl dt {
+
+}
+footer .wrap .combobox .partner dl dd {
+
+  line-height: 1.4;
+}
+footer .wrap .combobox .lang {
+
+  grid-column: 2;
+}
+footer .wrap .combobox .lang button {
+margin-bottom: 9px;
+  width: 200px;
+  height: 40px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+background-color: white;
+cursor: pointer;
+background-image: url(../img/uparrow.svg);
+background-repeat: no-repeat;
+background-position-x: 165px;
+background-position-y: 7px;
+}
+footer .wrap .combobox .lang ul {
+
+}
+footer .wrap .combobox .lang ul li {
+
+}
+footer .wrap .combobox .lang ul li a {
+  line-height: 1.6;
+}
+
+footer a{
+  color: #5d5d5d;
+}
+
+a.top{
+  width: 40px;
+  height: 40px;
+  display: block;
+  box-shadow: 0 0 5px #d1cfcf;
+  position: absolute;
+  border-radius: 50%;
+  right: calc((100% - 1080px) / 2 - 80px);
+  top: -80px;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  background-color: white;
+}

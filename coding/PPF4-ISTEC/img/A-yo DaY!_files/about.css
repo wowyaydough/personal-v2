@@ -1,0 +1,39 @@
+main{
+  
+}
+section{
+  min-height: 600px;
+}
+section:nth-child(odd){
+  background-color:#eee; 
+}
+
+section#about {
+
+  background-color: #ffca00;
+}
+section#about .wrap {
+
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+section#about .wrap>*{
+
+}
+section#about .wrap img{
+  width: calc(100% / 2);
+  padding-right: 107px;
+}
+
+section#about .wrap .aboutC{
+  width: calc(100% / 2);
+}
+section#about .wrap h2 {
+
+}
+section#about .wrap h2 span.block {
+
+}
+section#about .wrap p {
+
+}

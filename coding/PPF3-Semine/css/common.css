@@ -1,0 +1,134 @@
+body{
+  background: #f5f5f5;
+}
+
+.wrap{
+  width: 1920px;
+  margin: 0 auto;
+}
+/* 패딩50 */
+.padding50{
+  padding: 50px;
+}
+
+.paddingT50{
+  padding-top:50px;
+}
+.paddingR50{
+  padding-right:50px;
+}
+.paddingB50{
+  padding-bottom: 50px;
+}
+.paddingL50{
+  padding-left:50px;
+}
+
+/* 패딩100 */
+.padding100{
+  padding: 100px;
+}
+
+.paddingT100{
+  padding-top:100px;
+}
+.paddingR100{
+  padding-right:100px;
+}
+.paddingB100{
+  padding-bottom: 100px;
+}
+.paddingL100{
+  padding-left:100px;
+}
+
+/* 마진 */
+.margin50{
+  margin: 50px;
+}
+
+.marginT50{
+  margin-top:50px;
+}
+.marginR50{
+  margin-right:50px;
+}
+.marginB50{
+  margin-bottom: 50px;
+}
+.marginL50{
+  margin-left:50px;
+}
+
+/* flex */
+.flex{
+  display: flex;
+}
+
+/* 그리드 */
+.grid24{
+  display: grid;
+  grid-template-columns: 28% 59%;
+  grid-template-rows: auto auto auto auto;
+}
+
+.between{
+justify-content: space-between;
+}
+
+.block{
+  display: block;
+}
+.text_center{
+  text-align: center;
+}
+
+.center{
+  justify-content: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+/* 둥근모서리 */
+.borderR30{
+  border-radius: 30px;
+}
+
+/* 숨기기 */
+.hide{
+  display: none;
+}
+
+.line{
+  border-right: 1px solid;
+  margin: 0 12px;
+}
+
+/* 볼드체 */
+.b{
+  font-weight: bold;
+}
+   .h1{
+        font-size: 64px;
+    }
+    .h2{
+        font-size: 54px;
+
+    }
+    .h3{
+        font-size: 44px;
+    }
+    .h4{
+        font-size: 34px;
+    }
+    .h5{
+        font-size: 24px;
+    }
+    .h6{
+        font-size: 18px;
+    }
+    .p{
+        font-size: 12px;
+    }

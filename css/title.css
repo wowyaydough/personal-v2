@@ -1,0 +1,112 @@
+div#title {
+  height: 100%;
+  min-height: 800px;
+  position: relative;
+  padding-top: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+div#title::before{
+content:"";
+width: 52%;
+height: 280px;
+display: block;
+position: absolute;
+left: 0;
+bottom:0;
+background-color: #fa9032;
+border-radius: 0 140px 0 0;
+animation-name: barL;
+animation-duration: 1s;
+animation-direction: reverse; 
+animation-timing-function: ease-in;
+}
+
+@keyframes barL{
+  0%{
+    opacity: 1;
+    transform: translatex(0%);
+      }
+  100%{
+    opacity: 0;
+    transform: translatex(-100%);
+       }
+}
+
+div#title .wrap {
+  align-items: center;
+}
+div#title div .wrap{
+  
+}
+
+div#title .wrap h2{
+  animation-name: titleT;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-direction:reverse;
+  animation-timing-function: ease-in;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  line-height: 1.6;
+}
+
+@keyframes titleT{
+  0%{
+    opacity: 1;
+    transform: translatex(0%);
+  }
+  100%{
+    opacity: 0;
+    transform: translatex(-50%);
+  }
+}
+
+div#title .wrap .stxt{
+
+}
+div#title .wrap .stxt p.stxtT{
+  text-align: left;
+}
+div#title .wrap .stxt p.stxtB{
+  text-align: left;
+  line-height: 1.4;
+}
+
+div#title .wrap p {
+  animation-name: titleT;
+  animation-duration: 1s;
+  animation-direction:reverse;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  line-height: 40px;
+  color: #3356b0;
+}
+
+div#title::after{
+content:"";
+width: 52%;
+height: 280px;
+display: block;
+position: absolute;
+right: 0;
+bottom:0;
+background-color: #3356b0;
+border-radius: 140px 0 0 0;
+animation-name: barR;
+animation-duration: 1s;
+animation-direction: reverse;
+animation-timing-function: ease-in;
+}
+
+@keyframes barR{
+  0%{
+    transform: translatex(0%);
+  }
+  100%{
+    transform: translatex(100%);
+  }
+}  

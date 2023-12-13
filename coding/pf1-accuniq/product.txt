@@ -1,0 +1,54 @@
+<section id="product" class="paddingT50 paddingB50">
+            <div class="wrap flex between">
+                <h2 class="hide">주요제품</h2>
+                <ul class="flex">
+                    <li>
+                        <a href="" class="block">
+                            <h3 class="h4">BC380</h3>
+                            <p class="p">부위별 체지방량 및 근육량 분석하고 인체의 수분균형을 평가할 수 있는 스마트한 임피던스 체지방측정기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="block">
+                            <h3 class="h4">BC720</h3>
+                            <p class="p">위상각 측정, 세포외수분비분석, 6가지 주파수로 부위별 체성분 분석이 가능한 전문가용 고사양 임피던스 체지방측정기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="block">
+                            <h3 class="h4">BC300</h3>
+                            <p class="p">10 kg의 가벼운 제품 무게, 편리한 접이식 디자인, 전용 하드케이스를 이용한 손쉬운 이동 및 설치가 가능한 임피던스 체지방측정기</p>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <article>
+                        <hgroup>
+                            <h3 class="h3">ACCUNIQ</h3>
+                            <h4 class="h1">BC380</h4>
+                        </hgroup>
+                        <p class="h4">부위별 체성분 측정이 가능한 임피던스 체지방측정기</p>
+                        <p class="p">부위별 체지방량 및 근육량 분석하고 인체의 수분균형을 평가할 수 있는 스마트한 임피던스 체지방측정기</p>
+                        <img src="img/prod1.png" alt="ACCUNIQ BC380">
+                    </article>
+                    <article>
+                        <hgroup>
+                            <h3 class="h3">ACCUNIQ</h3>
+                            <h4 class="h1">BC720</h4>
+                        </hgroup>
+                        <p class="h4">전문가용 임피던스 체지방측정기</p>
+                        <p class="p">위상각 측정, 세포외수분비분석, 6가지 주파수로 부위별 체성분 분석이 가능한 전문가용 고사양 임피던스 체지방측정기</p>
+                        <img src="img/prod2.png" alt="ACCUNIQ BC720">
+                    </article>
+                    <article>
+                        <hgroup>
+                            <h3 class="h3">ACCUNIQ</h3>
+                            <h4 class="h1">BC300</h4>
+                        </hgroup>
+                        <p class="h4">이동이 편리한 접이식 임피던스 체지방측정기</p>
+                        <p class="p">10 kg의 가벼운 제품 무게, 편리한 접이식 디자인, 전용 하드케이스를 이용한 손쉬운 이동 및 설치가 가능한 임피던스 체지방측정기</p>
+                        <img src="img/prode.png" alt="ACCUNIQ BC300">
+                    </article>
+                </div>
+            </div>
+        </section>

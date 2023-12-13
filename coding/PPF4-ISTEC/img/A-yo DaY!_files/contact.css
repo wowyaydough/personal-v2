@@ -1,0 +1,19 @@
+section#contact {
+  background-color: #f2f2f2;
+}
+section#contact .wrap {
+}
+section#contact .wrap>*{
+
+}
+section#contact .wrap h2 {
+
+}
+section#contact .wrap a {
+  color: #3fb2f8;
+}
+section#contact .wrap img {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  max-width: 200px;
+}

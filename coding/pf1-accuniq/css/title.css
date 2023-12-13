@@ -1,0 +1,42 @@
+#title {
+  height: 100%;
+  background-color: white;
+  max-width: 1720px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 10px 28px #ccc;
+  min-height: 600px;
+  background-image: 
+     url(../img/logo.svg), url(../img/accuniq.svg);
+  background-repeat: no-repeat;
+  background-position-x:76%,center;
+  background-position-y: 75%, 103%;
+  background-size:35%,100%; 
+  position: relative;
+}
+#title .wrap {
+  height: 100%;
+}
+#title .wrap hgroup {
+  
+}
+#title .wrap hgroup h2 {
+  
+}
+#title .wrap hgroup h3 {
+  
+}
+#title::after{
+ content: ""; 
+  background-image:url(../img/woman.png);
+  background-repeat: no-repeat;
+  background-position-x:82%;
+  background-position-y: 0%;
+  background-size:contain; 
+ width: 655px;
+ height: 877px;
+ display: block;
+ position: absolute;
+ right: 183px;
+ bottom: -135px;
+}

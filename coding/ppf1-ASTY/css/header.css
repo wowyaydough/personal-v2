@@ -1,0 +1,112 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  max-width: 1920px;
+  height: 100px;
+}
+header div.wrap {
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 84%;
+}
+header div.wrap h1 {
+  font-weight: bold;
+}
+header div.wrap h1 a {
+  font-size: 0;
+  width: 90px;
+  height: 65px;
+  display: block;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+}
+
+header div.wrap div.flex{
+}
+
+header div.wrap div.flex a{
+  font-size: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 40%;
+  padding: 0 35px 0 0;
+}
+header div.middle{
+  background-image: url(img.bbs_02.jpg), url(img.bbs_03.jpg), url(img.bbs_04.jpg), url(img.bbs_05.jpg);
+}
+header div.middle img{
+  
+}
+
+header div.wrap ul{
+  margin-left: 630px;
+}
+
+header div.wrap ul li a{
+  
+  padding: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+header div.wrap ul.gnb li a {
+  padding: 10px 20px;
+}
+header div.wrap ul.gnb li a:hover {
+color: #f7ae2a; 
+}
+header div.wrap div.right {
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+}
+header div.wrap div.right ul.lang {
+  
+}
+header div.wrap div.right ul.lang li {
+  
+}
+header div.wrap div.right ul.lang li a {
+  padding: 10px 6px;
+  color: black;
+}
+
+header div.wrap div.right ul.lang li a:hover{
+  color:orange;
+}
+
+header div.wrap div.right ul.lang li:nth-child(1) a {
+  color: #eee;
+}
+
+header div.wrap div.right ul.lang li:nth-child(1) a:hover{
+  color:black;
+}
+header div.wrap div.right a.ham {
+  
+  font-size: 0;
+  width: 35px;
+  height: 7px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+header ul li{
+  
+  position: relative;
+  display: block;
+  /*! height: 100vh; */
+}
+header span{
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  margin-top: -135px;
+  z-index: 1;
+}

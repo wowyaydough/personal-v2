@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document*/
+
+*{
+  margin:0;
+  padding: 0;
+  border:0;
+  outline:0;
+  vertical-align: top;
+  line-height: 1
+  
+}
+html,body{
+  height:100%
+
+}
+hr{
+  display:none;
+}
+ul{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+  font-weight: normal; 
+}
+img{
+  max-width: 100%;
+  border: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,select{
+  vertical-align: middle;
+}
+
+body{
+  font-family: 'NanumGothicWeb','돋움';
+  font-size: 100%;
+  line-height: 1;
+}
+i,em,address{
+  font-style: normal;
+  font-weight: normal;
+}

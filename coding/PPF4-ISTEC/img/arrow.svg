@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .arrowCls {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 3px;
+            }
+        </style>
+    </defs>
+	<g>
+		<path class="arrowCls" d="M1.5,23.5l22-22m0,0V22.62m0-21.12H2.38" />
+	</g>
+</svg>

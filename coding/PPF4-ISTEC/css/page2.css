@@ -1,0 +1,92 @@
+section#p2 {
+
+  height: 160vh;
+  min-height: 600px;
+}
+section#p2 .wrap {
+
+}
+section#p2 .wrap ul {
+
+  position: relative;
+  padding-top: 300px;
+  box-sizing: border-box;
+}
+
+section#p2 .wrap ul li{
+overflow:hidden;  
+}
+section#p2 .wrap ul li:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+section#p2 .wrap ul li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 4;
+}
+section#p2 .wrap ul li:nth-child(3) {
+  grid-column: 3;
+  grid-row: 2 / span 3;
+}
+section#p2 .wrap ul li:nth-child(4) {
+  grid-column: 4;
+  grid-row: 4;
+}
+section#p2 .wrap ul li .txt_T{
+
+}
+section#p2 .wrap .txt_T p{
+  color: #00738d;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+section#p2 .wrap .txt_T h2{
+  line-height: 107px;
+}
+
+
+section#p2 .wrap ul li a {
+
+}
+section#p2 .wrap ul li:nth-last-child(2) a::after{
+content:"more view";
+color:white;
+border-radius: 50%;
+background-color: #00738d;
+width: 130px;
+height: 130px;
+display: block;
+transform: translateX(-55px) translatey(-629px);
+position: absolute;
+}
+
+section#p2 .wrap ul li a img {
+  width: 450px;
+  transition: all 1s;
+}
+
+section#p2 .wrap ul li a img:hover{
+   transform: scale(1.1);
+}
+
+section#p2 .wrap ul li a p{
+  position: absolute;
+  color: #969c9f;
+  bottom: 30px;
+  transition: all 1s;
+}
+section#p2 .wrap ul li a p:hover{
+transform: translateY(-20px);  
+  color:white;
+}  
+section#p2 .wrap ul li:nth-child(2) a p{
+    left: 144px;
+}
+
+
+section#p2 .wrap ul li:nth-child(3) a p{
+    left: 614px;
+}
+section#p2 .wrap ul li:nth-child(4) a p{
+    right: 176px;
+}

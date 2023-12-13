@@ -1,0 +1,101 @@
+footer {
+
+  background-color: black;
+  color: white;
+  width: 1486px;
+  margin: 0 auto;
+  width: 100%;
+}
+footer section#footer {
+
+}
+footer section#footer .footT {
+
+}
+footer section#footer .footT ul {
+
+}
+footer section#footer .footT a.top{
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: #00738d;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+footer section#footer .footT ul li {
+
+  color: white;
+  padding: 12px 0;
+}
+footer section#footer .footT ul li a {
+  color: white;
+  font-size: 31px;
+}
+footer section#footer .footT ul li a:hover{
+  color:orange;
+}
+footer section#footer .footT ul li a::after{
+  content:"";
+  background-image: url(../img/arrow.svg);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  transform: translateX(160px) translateY(-20px);
+}
+footer section#footer .footT ul li a:hover::after{
+  color:orange;
+}
+footer section#footer .footB {
+
+  justify-content: space-between;
+}
+footer section#footer .footB .person {
+
+}
+footer section#footer .footB h4{
+  
+}
+
+footer section#footer .footR{
+  
+  margin-top: 80px;
+}
+
+footer section#footer .footB h4 span.color{
+  color:#00738d;
+}
+footer section#footer .footB .person h6 {
+
+  font-size: 0;
+  background-image: url(../img/logo_grey.svg);
+  width: 206px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+footer section#footer .footB p {
+
+}
+
+footer section#footer .footB .person p.pers {
+  margin-bottom: 40px;
+}
+footer section#footer .footB .person ul {
+
+}
+footer section#footer .footB .person ul li {
+
+  line-height: 1.8;
+}
+footer section#footer .footB .person h4 {
+
+}

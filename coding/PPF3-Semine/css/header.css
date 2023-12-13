@@ -1,0 +1,57 @@
+header {
+  width: 1920px;
+}
+header .wrap {
+
+  height: 40px;
+  align-items: center;
+  border-bottom: 1px solid #15a775;
+  padding: 40px 0;
+}
+header .wrap a h2 {
+
+  font-size: 0;
+  width: 90px;
+  height: 70px;
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  margin-left: 140px;
+}
+header .wrap ul.log_in {
+
+  padding-right: 60px;
+  align-items: center;
+}
+header .wrap ul.log_in li {
+  padding-right: 23px;
+}
+header .wrap ul.menu li{
+  
+}
+header .wrap ul.menu li a {
+  padding: 0 25px;
+}
+header .wrap ul.menu li a::after{
+content:"";  
+width: 13px;
+height: 16px;
+display: block;
+transform: translateX(-8px) translateY(-13px);
+background-size: 116%;
+background-repeat: no-repeat;
+}
+
+header .wrap ul.menu li:not(:first-child) a::after{
+background-image: url(../img/star.png);   
+}
+
+
+header .wrap ul.log_in li:nth-child(2) a {
+  font-size: 0;
+  background-image: url(../img/search.png);
+    width:27px;
+  height: 27px;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+}

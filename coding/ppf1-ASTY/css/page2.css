@@ -1,0 +1,51 @@
+section#page2 {
+
+  height: 500px;
+  box-sizing: border-box;
+}
+section#page2 .wrap {
+
+  height: 466px;
+  width: 100%;
+  justify-content: center;
+  padding: 120px 0;
+  background-color: #eee;
+}
+section#page2 .wrap .center{display: block;bottom: 35%;}
+section#page2 .wrap p{
+
+}
+section#page2 .wrap h2{
+  font-size: 60px;
+  letter-spacing: 11px;
+  margin-left: 90px;
+  line-height: 1.6;
+}
+section#page2 .wrap p:nth-child(2){  
+  padding-top: 30px;
+  margin-left: 91px;
+  margin-bottom: 16px;
+}
+section#page2 .wrap p:nth-child(3){
+}
+section#page2 .photo{
+  width: 1920px;height: 1100px;
+}
+
+section#page2 .photo img{
+  width: 800px;height: 1000px;
+}
+
+section#photos{
+  
+}
+section#photos .photo{
+  
+  padding-bottom: 0px;
+  background-color: #eee;
+  overflow: hidden;
+}
+section#photos .photo img{
+  
+  margin-right: 5px;
+}

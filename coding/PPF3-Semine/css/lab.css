@@ -1,0 +1,135 @@
+section#lab {
+  width: 1823px;
+}
+section#lab .lab_top{
+  align-items: center;
+} 
+section#lab .lab_top h2{
+  font-weight: bold;
+}
+
+section#lab .lab_top h3{
+  border: 1px solid #dfdfdf;
+  border-radius: 42px;
+  width: 120px;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+section#lab .lab_top h3::after{
+  content:"";
+  background-image: url(../img/right.png);
+  background-repeat: no-repeat;
+  background-size: 72%;
+  background-position: center;
+  display: block;
+  width: 20px;
+  height: 24px;
+}
+
+section#lab .lab_title{
+}
+section#lab .lab_title h2{
+  font-size: 54px;
+}
+
+section#lab .lab_title h3{
+  padding: 0 20px 35px 0;
+}
+
+section#lab .lab_title h3 a{
+}
+section#lab .lab_title h3:first-child a::after{
+content:"";  
+background-image: url(../img/star.png);
+width: 20px;
+height: 20px;
+display: block;
+background-repeat: no-repeat;
+background-size: 116%;
+transform: translatey(-50px) translatex(10px);
+}
+
+  
+section .lab_title h3:not(:first-child) a{
+  color:#d4d4d4;
+}
+
+section#lab .wrap {
+
+}
+section#lab .wrap article:first-child{
+  padding-left:0px;  
+}
+
+section#lab .wrap article {
+  padding: 0 25px;
+}
+section#lab .wrap article a {
+
+}
+section#lab .wrap article a img {
+  border-radius: 10%;
+  padding: 0;
+  width: 388px;
+  height: 388px;
+  padding-bottom: 20px;
+}
+section#lab .wrap article a h3 {
+  background-color: #0bab6d;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  width: 74px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+section#lab .wrap article:nth-child(3) a h3{
+background-color:#fb9622;
+}
+section#lab .wrap article:nth-child(4) a h3{
+background-color:#fb9622;
+}
+section#lab .wrap article a h2 {
+  padding-top: 20px;
+}
+section#lab .wrap article a p.h6 {
+  padding: 20px 0 50px 0;
+}
+section#lab .wrap article:nth-child(4) a p.h6{
+  
+  padding: 20px 0 31px 0;
+}
+
+section#lab .wrap article a div p.recipy{
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: 126px;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  border-radius: 32px;
+  margin: 0px 20px;
+  justify-content: center;
+  background-color: #ccc;
+}
+
+section#lab .wrap article a div p.recipy span{
+  padding-right: 11px;
+}  
+section#lab .wrap article a div p.skill{
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: 126px;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  border-radius: 32px;
+  margin: 0px 20px;
+  justify-content: center;
+}

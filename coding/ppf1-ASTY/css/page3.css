@@ -1,0 +1,22 @@
+section#page3{background-color: white;padding-top: 200px;padding-bottom: 200px;}
+   section#page3 .wrap{justify-content: center;background-color: white;}
+      section#page3 .wrap h2{
+
+      font-size: 51px;
+      line-height: 1.4;
+      }
+      section#page3 .wrap p{
+
+      line-height: 1.6;
+      margin-left: 200px;
+      font-size: 15px;
+      }
+      section#page3 .wrap a{
+
+      border-bottom: 1px solid black;
+      }
+section#movie{ 
+      background-color: white;
+      padding-bottom: 50px;
+}
+section#movie .wrap{margin-bottom: 200px;}

@@ -1,0 +1,195 @@
+main {
+
+}
+main section#title {
+height: 100vh;
+animation-name:bground;
+animation-duration:15s;
+animation-timing-function: ease-in;
+animation-fill-mode: forwards;
+min-height: 600px;
+}
+@keyframes bground{
+  0%{
+      background-image: url(../img/title1.jpg);
+  }
+  50%{
+      background-image: url(../img/title2.jpg);
+  }
+  100%{
+      background-image: url(../img/title3.jpg);
+  }
+}
+main section#title .wrap::before{
+  content:"PREV";
+  transform: translatex(-800px) translatey(250px);
+}
+main section#title .wrap {
+
+  height: 600px;
+  align-items: center;
+  color: white;
+}
+main section#title .wrap::after{
+  content:"NEXT";
+  transform: translatex(800px) translatey(-81px);
+}
+section#title .wrap h2{
+  
+}
+
+
+section#title .wrap h2.stxt1{
+animation-name:txt;
+animation-duration:1s;
+animation-delay:0.6s;
+animation-direction:reverse;
+animation-fill-mode:forwards;
+animation-timing-function: ease-in;
+opacity:0;
+}
+section#title .wrap h2.stxt2{
+animation-name:txt;
+animation-duration:1s;
+animation-delay:1s;
+animation-direction:reverse;
+animation-fill-mode:forwards;
+opacity:0;
+animation-timing-function: ease-in;  
+}
+section#title .wrap h2.stxt3{
+animation-name:txt;
+animation-duration:1s;
+animation-delay:1.4s;
+animation-direction:reverse;
+animation-fill-mode:forwards;
+opacity:0;
+animation-timing-function: ease-in;
+}
+section#title .wrap h2.stxt4{
+animation-name:txt;
+animation-duration:1s;
+animation-delay:1.8s;
+animation-direction:reverse;
+animation-fill-mode:forwards;
+opacity:0;
+animation-timing-function: ease-in;
+}
+main section#title .wrap h2 {
+  padding-right: 10px;
+}
+main section#title .wrap p {
+}
+main section#title .wrap .flex ul li{
+  animation-name: txt;
+}
+
+main section#title .wrap p.txt1{
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name:txt;
+  animation-delay: 0.6s;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+main section#title .wrap p.txt2{
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name:txt;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+main section#title .wrap p.txt3{  
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name:txt;
+  animation-delay: 1.4s;
+  animation-duration: 1s;  
+  animation-direction: reverse;
+}
+main section#title .wrap p.txt4{
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name:txt;
+  animation-delay: 1.8s;
+  animation-duration: 1s;  
+  animation-direction: reverse;
+}
+main section#title .wrap p.txt5{
+  opacity: 0;
+  animation-fill-mode: forwards; 
+  animation-name:txt;
+  animation-delay: 2.2s;
+  animation-duration: 1s;  
+  animation-direction: reverse;
+}
+main section#title .wrap p.txt6{  
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: txt;
+  animation-duration: 1s;
+  animation-delay: 2.6s;
+  animation-direction: reverse;
+}
+@keyframes txt{
+  0%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+section#title .stxt::before{
+  content:"";
+  width: 100px;
+  height: 20px;
+  transform: translatex(-567px) translatey(160px);
+  display: block;
+  border-bottom: 1px solid lightgrey;
+}
+section#title .stxt{
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+
+section#title .stxt::after{
+  content:"";
+  width: 100px;
+  height: 20px;
+  transform: translatex(565px) translatey(160px);
+  display: block;
+  border-bottom: 1px solid lightgrey;
+}
+section#title .txt_T{
+  padding: 17px 0;
+  margin-bottom: 20px;
+}
+section#title a{
+  
+  transition: all 1s;
+}
+section#title a.num1{
+  border-bottom: 2px solid white;
+  width: 50px;
+  display: block;
+  height: 30px;
+  transform: translatex(77px) translateY(-226px);
+}
+section#title a.num2{
+  border-bottom: 2px solid white;
+  width: 50px;
+  display: block;
+  height: 30px;
+  transform: translatex(1679px) translateY(-258px);
+}
+section#title a.num1:hover{
+  width: 100px;
+  transform: translatex(27px) translatey(-226px);
+}
+section#title a.num2:hover{
+  width: 100px;
+}
