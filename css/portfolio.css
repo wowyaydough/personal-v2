@@ -1,34 +1,7 @@
 section#portfolio {
 
 }
-section#portfolio::before{
-  content:"";
-  display: block;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: -350px;
-  left: calc(50% - 350px);
-}
-
-
-
 section#portfolio .wrap {
-}
-
-section#portfolio .wrap::before {
-  content:"";
-  display: block;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: -140px;
-  left: calc(50% - 140px);
-
 }
 
 section#portfolio .wrap>*{
@@ -44,9 +17,13 @@ section#portfolio .wrap h2{
   
 }
 section#portfolio .wrap p{
-  
   display: flex;
   justify-content: right;
+}
+
+section#portfolio .text>p{
+  color: #3356b0;
+  font-weight: bold;
 }
 section#portfolio::after{
   
@@ -55,8 +32,6 @@ section#portfolio::after{
 
 section#portfolio .wrap ul.board>li{
   margin: 10px;
-  background-color: #3356b0;
-  border-radius: 18px;
   padding: 10px;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -67,8 +42,8 @@ section#portfolio .wrap ul.board > li>a{
   
 }
 section#portfolio .wrap ul li img{
-  border-radius: 20px;
   height: 127px;
+  box-shadow: 0 10px 10px #eee;
 }
 section#portfolio .wrap ul li a img:hover {
   transform:scale(2);
