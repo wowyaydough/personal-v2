@@ -1,9 +1,16 @@
+
+### https://wowyaydough.github.io/personal-v2/
+```
+<h1>제목</h1>
+```
 ## 프로젝트 목표
 취업을 위한 포트폴리오 제작, 자신의 작업을 전시하고 홍보
 
 ## 기술 스텍
-- HTML
-- css
+- HTML5
+- css5
+- jquery
+- javascript
 
 ## 기능 및 섹션
 - 포트폴리오 작품 게시
