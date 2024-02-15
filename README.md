@@ -16,10 +16,11 @@
 - 라이온하트 https://wowyaydough.github.io/LionHeart/
 
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1](https://github.com/pageservice/personal/assets/71798491/040b7316-5c4c-4a09-b7e8-6c54d60ec832)
-![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
+![accuniq](https://github.com/wowyaydough/personal-v2/assets/150096210/235a4915-b503-4129-baf7-1b5b2604f501)
+![lpoint](https://github.com/wowyaydough/personal-v2/assets/150096210/8e93101c-ada4-4ab2-a8d3-955dd2067424)
+![HBpaper](https://github.com/wowyaydough/personal-v2/assets/150096210/afcdfc23-4eff-40ed-a7e2-94d5afd2cbb5)
+![hitejinro](https://github.com/wowyaydough/personal-v2/assets/150096210/4d2a7660-c263-441f-96a6-043e3c9e53e8)
 
-![ww](https://github.com/pageservice/personal/assets/71798491/30c357e8-d39b-42e6-9c30-0db7706f73d4)
 
 ## 작성자 정보
 makemyownway@naver.com
