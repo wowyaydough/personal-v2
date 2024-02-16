@@ -39,15 +39,17 @@ section#portfolio .wrap ul.board>li{
   width: 250px;
 }
 section#portfolio .wrap ul.board > li>a{
-  
+  overflow: hidden;
 }
 section#portfolio .wrap ul li img{
   height: 127px;
   box-shadow: 0 10px 10px #eee;
+  transition:1s;
+
 }
 section#portfolio .wrap ul li a img:hover {
-  transform:scale(2);
-  overflow: hidden;
+  transform:scale(1.2);
+
 }
 
 section#portfolio .wrap .text{
