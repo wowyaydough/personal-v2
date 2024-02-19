@@ -25,93 +25,102 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
+
+     <!-- 제이쿼리 연결 -->
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+     
+<!-- slick -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed:3000
+});
+    });
+    </script>
+<script>
+    $(document).ready(function(){
+
+        // 햄버거버튼
+        $(".ham").click(function(){
+            $("header .wrap ul.gnb").toggleClass("gnbSpread");
+            $(this).toggleClass("close");
+        });
+
+        // 스크롤 이벤트 gnb 클릭
+        let offsetS = $("section#skill").offset();
+        let offsetP = $("section#portfolio").offset();
+        let offsetC = $("section#contact").offset();
+        $("header .wrap ul.gnb li:nth-child(1) a").click(function(){
+                $("html").animate({scrollTop: offsetS.top},500);
+                return false;
+        });
+        $("header .wrap ul.gnb li:nth-child(2) a").click(function(){
+                $("html").animate({scrollTop: offsetP.top},500);
+                return false;
+        });
+        $("header .wrap ul.gnb li:nth-child(3) a").click(function(){
+                $("html").animate({scrollTop: offsetC.top},500);
+                return false;
+        });
+
+            // 스크롤이벤트 햄버거
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=$("section#skill").height()){
+                    $(".ham").addClass("gnbShow");
+                    $("ul.gnb").hide();
+                }
+            else{
+                $(".ham").removeClass("gnbShow");
+                $("ul.gnb").show();
+            }
+        });
+    });
+</script>
 </head>
 <body>
     <!-- 상단영역 -->
-    <header class="paddingT50">
-        <div class="wrap flex between">
+    <header>
+        <div class="wrap">
             <h1>
-                <a href="" class="h4 b c">A-yo DaY!</a>
+                <a href="">A-yo DaY!</a>
             </h1>
             <ul class="gnb flex">
-                <li><a href="" class="h4 b c">ABOUT</a></li>
-                <li><a href="" class="h4 b c">SKILL</a></li>
-                <li><a href="" class="h4 b c">PORTFOLIO</a></li>
-                <li><a href="" class="h4 b c">CONTACT</a></li>
+                <li><a href="">skill</a></li>
+                <li><a href="">porfolio</a></li>
+                <li><a href="">contact</a></li>
             </ul>
-            <!-- <div class="sublist">
-                <h2 class="hide">menu</h2>
-                <ul class="useguide">
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SKILL</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONTACT</a></li> -->
-                <!-- </ul> -->
-                <ul class="lang flex p14">
-                    <a href="" class="c">menu</a>
-                </ul>
-            <!-- </div> -->
         </div>
+        <a class="ham">
+        </a>
     </header>
     <!-- 타이틀영역 -->
          <div id="title">
               <div class="wrap flex column">
-                <div class="greeting flex">
-                    <h2 class="stxt1 h1 c b">H</h2>
-                    <h2 class="stxt1 h1 c b">i</h2>
-                    <h2 class="stxt2 h1 c b">!&nbsp;&nbsp;</h2>
-                    <h2 class="stxt3 h1 c b">I</h2>
-                    <h2 class="stxt1 h1 c b">'m&nbsp;&nbsp;</h2>
-                    <h2 class="stxt4 h1 c b">D</h2>
-                    <h2 class="stxt1 h1 c b">O</h2>
-                    <h2 class="stxt2 h1 c b">Y</h2>
-                    <h2 class="stxt3 h1 c b">E</h2>
-                    <h2 class="stxt1 h1 c b">O</h2>
-                    <h2 class="stxt4 h1 c b">N</h2>
-              </div>
-                    </h2>
-                        <p class="stxtT h6 b c">
-                        Ready for
-                        </p>
-                        <span class="block"></span>
-                        <p class="stxtB h4 b">
-                            
-                            <span class="block"></span>
-                            Web Publish & Design
-                        </p>
+             
                </div>
           </div>
     <!-- 메인영역 -->
     <main>
-        <!--  ABOUT -->
-        <section id="about" class="paddingT50 paddingB50 vh100">
-            <div class="wrap flex h100">
-                <img src="https://images.unsplash.com/photo-1665686306574-1ace09918530?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fCVFQyU5NyVBQyVFQyU5RSU5MHxlbnwwfHwwfHx8MA%3D%3D" alt="여자사진">
-                <div class="aboutC flex column">
-                    <h2 class="h2 b c">
-                        ABOUT<span class="block"></span>
-                    </h2>
-                    <ul class="flex column">
-                        <li class="h6 b c">이름 : 황도연</li>
-                        <li class="h6 b c">성별 : 여자</li>
-                        <li class="h6 b c">교육과정 : 이젠 모란 웹디자인 퍼블리셔 5개월 수료</li>      
-                    </ul>
-                </div>    
-            </div>
-        </section>
+
     
         <!-- SKILL -->
         <section id="skill" class="paddingT50 paddingB50 vh100">
-            <div class="wrap flex column align-center h100">
-                <h2 class="h2 b color_w">
+            <div class="wrap flex column h100">
+                <h2 class="h2 color_w">
                     SKILL <span class="block"></span>
                     
                 </h2>
                 <p class="p color_w">
-                    5개월간 배우고 익힌 스킬입니다.<span class="block"></span>
-                    
+                    5개월간 배우고 익힌 스킬입니다.<span class="block"></span>  
                 </p>
-                <ul class="skills c">
+                <ul class="skills">
                     <li class="color_w">HTML5</li>
                     <li class="color_w">CSS3</li>
                     <li class="color_w">jQuery</li>
@@ -122,21 +131,10 @@
                     <li class="color_w">웹접근성</li>
                     <li class="color_w">Photoshop</li>
                     <li class="color_w">Illustrator</li>
-                    <li class="color_w">프리미어</li>
-                    <li class="color_w">에펙</li>
                     <li class="color_w">VisualCode Studio</li>
                     <li class="color_w">FireFox 검사기</li>
                     <li class="color_w">Google Drive</li>
                     <li class="color_w">Kakao Oven</li>
-                    <!-- 숨김 스킬 -->
-                    <!-- <li>부트스트랩</li><br>
-                    <li>워드프레스</li>
-                    <li>cafe24쇼핑몰 구축관리</li>
-                    <li>웹사이트 최적화</li>
-                    <li>SEO검색엔진 등록 (네이버,구글) </li>
-                    <li>vue.js</li>
-                    <li>발사믹</li> -->
-        
                  </ul>
             </div>
         </section>
@@ -144,140 +142,35 @@
         <!-- portfolio -->
         <section id="portfolio" class="flex paddingT50 paddingB50 vh100">
             <div class="wrap flex column center vh100">
-                <h2 class="h2 c b">
+                <h2 class="h2">
                     PORTFOLIO<span class="block"></span>
                 </h2>
-                <p class="h6 c b">
-                    8 items<span class="block"></span>
+                <p class="h6">
+                    12 items<span class="block"></span>
                 </p>
-                <div class="wrap paddingB50 radius"> 
-                    <ul class="board flex paddingT30">
-                     
-                        <!-- 작업물 1번 -->
-                        <li>
-                            <a href="coding/pf1-accuniq/index.html">
-                                <img src="img/accuniq.png" alt="accuniq">
-                                    <div class="text">
-                                    <h3 class="hide">ACCUNIQ</h3>
-                                    <span>
-                                </div>
-                            </a>
-                        </li>                           
-                        <!--  작업물 2번 -->
-                        <li>
-                        <a href="coding/ppf1-ASTY/index.html">
-                            <img src="img/asty.png" alt="asty">
-                            <div class="text">
-                                <h3 class="hide">ASTY</h3>
-                                <ul>
-                            </div>
-                        </a>
-                        </li>
-
-                        <!-- 작업물 3번 -->
-                        <li>
-                            <a href="coding/ppf2-Lionheart/index.html">
-                                <img src="img/lionheart.png" alt="lionheart">
-                                <div class="text">
-                                    <h3 class="hide">LionHeart</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- 작업물 4번 -->
-                        <li>
-                            <a href="coding/pf2-Lpoint/index.html">
-                                    <img src="img/lpoint.png" alt="lionheart">
-                                    <div class="text">
-                                        <h3 class="hide">LPoint</h3>
-                                    </div>
-                                </a>
-                            </li>
-                        <!-- 작업물 5번 -->
-                        <li>
-                        <a href="coding/PPF3-Semine/index.html">
-                            <img src="img/samine.png" alt="samine">
-                            <div class="text">
-                                <h3 class="hide">
-                                    Samine</h3>
-                            </div>
-                        </a>
-                        </li>                      
-                        <!-- 작업물 6번 -->
-                        <li>
-                            <a href="coding/PPF4-ISTEC/index.html">
-                                <img src="img/ISTEC.png" alt="samine">
-                                    <div class="text">
-                                        <h3 class="hide">ISTEC</h3>
-                                    </div>
-                            </a>
-                        </li>             
-
-                        <!-- 작업물 7번 -->
-                        <li>
-                            <a href="coding/PPF5-carrot/index.html">
-                                <img src="img/Carrot.png" alt="Carrot">
-                                    <div class="text">
-                                        <h3 class="hide">Carrot</h3>
-                                    </div>
-                            </a>
-                        </li>                    
-                        <!-- 작업물 8번 -->
-                        <li>
-                            <a href="coding/pf4-hbpaper_re/pf4_HBpaper_re/index.html">
-                                <img src="img/hbpaper_re.png" alt="hbpaper">
-                                    <div class="text">
-                                        <h3 class="hide">HBpaper</h3>
-                                    </div>
-                            </a>
-                        </li>                     
-                        <!-- 작업물 9번 -->
-                        <li>
-                            <a href="coding/PPF6-BR/index.html">
-                                <img src="img/BR.png" alt="baskinrobbins">
-                                    <div class="text">
-                                        <h3 class="hide">baskinrobbins</h3>
-                                    </div>
-                            </a>
-                        </li>                    
-                        <!-- 10번 -->
-                        <li>
-                            <a href="coding/PPF7-Tooniverse/index.html">
-                                <img src="img/Tooniverse.png" alt="Tooniverse">
-                                    <div class="text">
-                                        <h3 class="hide">Tooniverse</h3>
-                                    </div>
-                            </a>
-                        </li>       
-                        <!-- 11번 -->
-                        <li>
-                            <a href="coding/pf4_hitejinro/index.html">
-                                <img src="img/hitejinro.png" alt="hitejinro">
-                                    <div class="text">
-                                        <h3 class="hide">hitejinro</h3>
-                                    </div>
-                            </a>
-                        </li>       
-                        <!-- 12번 -->
-                        <li>
-                            <a href="coding/PPF8-Etude/index.html">
-                                <img src="img/Etude.png" alt="Etude">
-                                    <div class="text">
-                                        <h3 class="hide">Etude</h3>
-                                    </div>
-                            </a>
-                        </li>       
-                        
-                    </ul>
+                <div class="autoplay"> 
+                    <img src="img/slick/accuniq.png" alt="accuniq">
+                    <img src="img/slick/asty.png" alt="asty">
+                    <img src="img/slick/lionheart.png" alt="lionheart">
+                    <img src="img/slick/lpoint.png" alt="lpoint">
+                    <img src="img/slick/semine.png" alt="samine">
+                    <img src="img/slick/ISTEC.png" alt="ISTEC">
+                    <img src="img/slick/Carrot.png" alt="Carrot">
+                    <img src="img/slick/hbpaper_re.png" alt="hbpaper">
+                    <img src="img/slick/BR.png" alt="baskinrobbins">
+                    <img src="img/slick/Tooniverse.png" alt="Tooniverse">
+                    <img src="img/slick/hitejinro.png" alt="hitejinro">
+                    <img src="img/slick/Etude.png" alt="Etude">
                 </div>
             </div>
         </section> 
     
         <!-- CONTACT -->
-        <section id="contact" class="paddingT50 paddingB50">
+        <section id="contact">
             <div class="wrap h100 flex column center">
-                <h2 class="h2 c b">CONTACT</h2>
-                <li class="c b">Instagram : ayodough</li>
-                <li class="c b">E-mail : makemyownwaysecond@gmail.com </li>
+                <h2 class="h2">CONTACT</h2>
+                <li>Instagram : ayodough</li>
+                <li>E-mail : makemyownwaysecond@gmail.com </li>
             </div>
         </section>
     </main>
@@ -285,7 +178,7 @@
     <!-- 우측슬라이드아이콘 -->
   
     <!-- 하단영역 -->
-    <footer class="paddingT50 paddingB50">
+    <footer>
         <div class="wrap">
           @Copyright all reserved.
         </div>
