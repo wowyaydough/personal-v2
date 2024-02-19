@@ -1,16 +1,9 @@
 main{
   
 }
-section{
-  min-height: 600px;
-}
-section:nth-child(odd){
-  background-color:#eee; 
-}
 
 section#about {
-
-  background-color: #ffca00;
+  background-color: black;
 }
 section#about .wrap {
 
@@ -29,11 +22,13 @@ section#about .wrap .aboutC{
   width: calc(100% / 2);
 }
 section#about .wrap h2 {
-
+  color: white;
+  font-weight: bold;
 }
 section#about .wrap .aboutC ul li{
   
   line-height: 1.6;
+  color: white;
 }
 
 section#about .wrap h2 span.block {

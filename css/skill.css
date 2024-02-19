@@ -1,8 +1,9 @@
 section#skill {
-  background-color: #2a98d9;
+  background-color: #272727;
   position: relative;
   overflow: hidden;
   min-height: 600px;
+  z-index: -1;
 }
 
 section#skill::before{
@@ -46,73 +47,50 @@ section#skill div.wrap ul li::before{
   background-size: contain;
   background-position: center;
   color: ;
+  transition:1s;
 }
 
 section#skill div.wrap ul li:nth-child(1)::before{
-  background-image: url(../img/html.png);
+  background-image: url(../img/skill/html.png);
 }
 section#skill div.wrap ul li:nth-child(2)::before{
-  background-image: url(../img/css.png);
+  background-image: url(../img/skill/css.png);
   background-color:white;
 }
 section#skill div.wrap ul li:nth-child(3)::before{
-  background-image: url(../img/jq.png)
+  background-image: url(../img/skill/jq.png)
 }
 section#skill div.wrap ul li:nth-child(4)::before{
-  background-image: url(../img/js.png)
+  background-image: url(../img/skill/js.png)
 }section#skill div.wrap ul li:nth-child(5)::before{
-  background-image: url(../img/z.png)
+  background-image: url(../img/skill/z.png)
 }
 section#skill div.wrap ul li:nth-child(6)::before{
-  background-image: url(../img/ss.png)
+  background-image: url(../img/skill/ss.png)
 }section#skill div.wrap ul li:nth-child(7)::before{
-  background-image: url(../img/w3.png);
+  background-image: url(../img/skill/w3.png);
   background-color: white;
 }
 section#skill div.wrap ul li:nth-child(8)::before{
-  background-image: url(../img/w2.png)
+  background-image: url(../img/skill/w2.png)
 }
 section#skill div.wrap ul li:nth-child(9)::before{
-  background-image: url(../img/ps.png)
+  background-image: url(../img/skill/ps.png)
 }section#skill div.wrap ul li:nth-child(10)::before{
-  background-image: url(../img/ai.png)
-}section#skill div.wrap ul li:nth-child(11)::before{
-  background-image: url(../img/pr.png)
-}section#skill div.wrap ul li:nth-child(12)::before{
-  background-image: url(../img/ae.png)
-}section#skill div.wrap ul li:nth-child(13)::before{
-  background-image: url(../img/vv.png);
+  background-image: url(../img/skill/ai.png)
+}
+section#skill div.wrap ul li:nth-child(11)::before{
+  background-image: url(../img/skill/vv.png);
     background-color: white;
+}section#skill div.wrap ul li:nth-child(12)::before{
+  background-image: url(../img/skill/f.png)
+}section#skill div.wrap ul li:nth-child(13)::before{
+  background-image: url(../img/skill/gg.png)
 }section#skill div.wrap ul li:nth-child(14)::before{
-  background-image: url(../img/f.png)
-}section#skill div.wrap ul li:nth-child(15)::before{
-  background-image: url(../img/gg.png)
-}section#skill div.wrap ul li:nth-child(16)::before{
-  background-image: url(../img/ov.png);
+  background-image: url(../img/skill/ov.png);
   background-color: white;
-}section#skill div.wrap ul li:nth-child(17)::before{
-  background-image: url(../img/ai.png)
-}section#skill div.wrap ul li:nth-child(18)::before{
-  background-image: url(../img/w2.png)
 }
-section#skill div.wrap ul li:nth-child(19)::before{
-  background-image: url(../img/w2.png)
-}
-section#skill div.wrap ul li:nth-child(20)::before{
-  background-image: url(../img/w2.png)
-}
-section#skill div.wrap ul li:nth-child(21)::before{
-  background-image: url(../img/ov.png)
-}
-section#skill div.wrap ul li:nth-child(22)::before{
-  background-image: url(../img/w2.png)
-}
-section#skill div.wrap ul li:nth-child(23)::before{
-  background-image: url(../img/pr.png)
-}
-section#skill div.wrap ul li:nth-child(24)::before{
-  background-image: url(../img/ae.png)
-}
+
 section#skill .wrap::before {
   content:"";
   display: block;
@@ -136,7 +114,7 @@ section#skill .wrap>*{
   
 }
 section#skill .wrap h2{
-  
+
 }
 section#skill .wrap p{
   

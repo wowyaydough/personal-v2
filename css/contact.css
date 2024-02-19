@@ -1,14 +1,18 @@
 section#contact {
-  background-color: #f2f2f2;
+  background-color: #272727;
   min-height: auto;
+  padding: 20px 0;
 }
 section#contact .wrap {
 }
-section#contact .wrap>*{
 
-}
 section#contact .wrap h2 {
-
+  color: white;
+}
+section#contact .wrap li{
+  
+  color: white;
+  line-height: 1.7;
 }
 section#contact .wrap a {
   color: #3fb2f8;

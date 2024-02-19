@@ -1,5 +1,6 @@
 section#portfolio {
-
+  background-color: black;
+  padding-top: 0px;
 }
 section#portfolio .wrap {
 }
@@ -7,7 +8,9 @@ section#portfolio .wrap {
 section#portfolio .wrap>*{
   
 }
-
+.slick-list{
+  margin: 0 15px !important;
+}
 section#portfolio .wrap ul.flex{
   
   flex-wrap: wrap;
@@ -15,10 +18,14 @@ section#portfolio .wrap ul.flex{
 }
 section#portfolio .wrap h2{
   
+  color: white;
 }
 section#portfolio .wrap p{
   display: flex;
   justify-content: right;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 section#portfolio .text>p{
@@ -59,7 +66,9 @@ section#portfolio .wrap .text{
 }
 section#portfolio .wrap .text h3{
   padding: 10px 0;
-  color: white;
+  color: #cacaca;
+  text-align: left;
+  font-weight: 300;
 }
 section#portfolio .wrap .text h3 a{
   color: white;
