@@ -10,7 +10,7 @@ header .wrap {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  padding-top: 18px;
+  padding-top: 44px;
 }
 header .wrap h1 {
 
@@ -26,13 +26,19 @@ header .wrap h1 span {
 
 }
 header .wrap ul.gnb {
+  display: initial;
+  position: fixed;
+  right: 50px;
+  top: 98px;
+  width: 450px;
 }
+
+
 header .wrap ul.gnb.gnbSpread {
   display:  initial !important;
   position: fixed;
-  right: 35px;
-  top: 60px;
-  width: 450px;
+
+  right: 57px;
 }
 header .wrap ul.gnb.gnbSpread li{
   display: flex;
@@ -44,6 +50,8 @@ header .wrap ul.gnb.gnbSpread li a{
 header .wrap ul.gnb li {
     align-items: center;
     height: 100%;
+    display: flex;
+    justify-content: right;
 }
 
 header .wrap ul.gnb li a{ 
@@ -55,6 +63,7 @@ header .wrap ul.gnb li a{
   color: white;
   font-weight: 300;
   font-size: 35px;
+  line-height: 66px;
 }
 
 header .wrap ul.gnb li a:hover {
@@ -168,10 +177,10 @@ header ul.lang a:hover{
   border: none;
   background-size: contain;
   position: fixed;
-  right: 50px;
-  top: 20px;
+  right: 74px;
+  top: 60px;
   z-index: 1;
-  display: none;
+  /*! display: none; */
   background-repeat: no-repeat;
 }
 

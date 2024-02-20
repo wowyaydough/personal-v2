@@ -14,8 +14,8 @@ section#about .wrap>*{
 
 }
 section#about .wrap img{
-  width: calc(100% / 2);
   padding-right: 107px;
+  width: 400px;
 }
 
 section#about .wrap .aboutC{
@@ -23,7 +23,6 @@ section#about .wrap .aboutC{
 }
 section#about .wrap h2 {
   color: white;
-  font-weight: bold;
 }
 section#about .wrap .aboutC ul li{
   
