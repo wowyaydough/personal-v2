@@ -54,18 +54,23 @@
         });
 
         // 스크롤 이벤트 gnb 클릭
+        let offsetA = $("section#about").offset();
         let offsetS = $("section#skill").offset();
         let offsetP = $("section#portfolio").offset();
         let offsetC = $("section#contact").offset();
         $("header .wrap ul.gnb li:nth-child(1) a").click(function(){
-                $("html").animate({scrollTop: offsetS.top},500);
+                $("html").animate({scrollTop: offsetA.top},500);
                 return false;
         });
         $("header .wrap ul.gnb li:nth-child(2) a").click(function(){
-                $("html").animate({scrollTop: offsetP.top},500);
+                $("html").animate({scrollTop: offsetS.top},500);
                 return false;
         });
         $("header .wrap ul.gnb li:nth-child(3) a").click(function(){
+                $("html").animate({scrollTop: offsetP.top},500);
+                return false;
+        });
+        $("header .wrap ul.gnb li:nth-child(4) a").click(function(){
                 $("html").animate({scrollTop: offsetC.top},500);
                 return false;
         });
@@ -92,6 +97,7 @@
                 <a href="">A-yo DaY!</a>
             </h1>
             <ul class="gnb flex">
+                <li><a href="">about</a></li>
                 <li><a href="">skill</a></li>
                 <li><a href="">porfolio</a></li>
                 <li><a href="">contact</a></li>
@@ -108,8 +114,22 @@
           </div>
     <!-- 메인영역 -->
     <main>
-
-    
+    <!--  ABOUT -->
+    <section id="about" class="paddingT50 paddingB50 vh100">
+        <div class="wrap flex h100">
+            <img src="https://images.unsplash.com/photo-1665686306574-1ace09918530?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fCVFQyU5NyVBQyVFQyU5RSU5MHxlbnwwfHwwfHx8MA%3D%3D" alt="여자사진">
+            <div class="aboutC flex column">
+                <h2 class="h2">
+                    ABOUT<span class="block"></span>
+                </h2>
+                <ul class="flex column">
+                    <li class="h6">이름 : 황도연</li>
+                    <li class="h6">성별 : 여자</li>
+                    <li class="h6">교육과정 : 이젠 모란 웹디자인 퍼블리셔 5개월 수료</li>      
+                </ul>
+            </div>    
+        </div>
+    </section>
         <!-- SKILL -->
         <section id="skill" class="paddingT50 paddingB50 vh100">
             <div class="wrap flex column h100">
