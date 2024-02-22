@@ -2,7 +2,7 @@ body{
 
 }
 .wrap{
-   max-width: 1400px;
+   max-width: 1800px;
   margin: 0 auto;
 }
 /* 패딩 */
@@ -87,9 +87,9 @@ body{
 /* 라인 */
 .line{
   border-left: 1px solid #ccc;
-  height: 17px;
+  height: 25px;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 /* 안보이게 */

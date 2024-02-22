@@ -1,193 +1,36 @@
-body{
-}
-header {
-  position: fixed;
-  width: 100%;
-}
-
-
-header .wrap {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  padding-top: 44px;
-}
-header .wrap h1 {
-
-}
-header .wrap h1 a {
-  color: white;
-  font-weight: 300;
-  font-size: 35px;
-  /*! position: fixed; */
-  /*! z-index: 1; */
-}
-header .wrap h1 span {
-
-}
-header .wrap ul.gnb {
-  display: initial;
-  position: fixed;
-  right: 50px;
-  top: 98px;
-  width: 450px;
+.header{
+   position: fixed;
+   width: 100%;
+   z-index: 1;
 }
 
+.header .wrap{
+   margin-top: 30px;
+   align-items: center;
+}
+.header .wrap>a{
+   
+   font-size: 0;
+   background-image: url(../img/logo.png);
+   display: block;
+   width: 90px;
+   height: 74px;
+   background-size: contain;
+}
+.header .wrap ul a{
+   color: white;
+   font-weight: 300;
+   font-size: 25px;
+   text-transform: capitalize;
+}
+.header .wrap ul a:hover{
+   color:grey;
+}
+.header .wrap ul{
 
-header .wrap ul.gnb.gnbSpread {
-  display:  initial !important;
-  position: fixed;
-
-  right: 57px;
-}
-header .wrap ul.gnb.gnbSpread li{
-  display: flex;
-  justify-content: right;
-}
-header .wrap ul.gnb.gnbSpread li a{
-  line-height: 60px;
-}
-header .wrap ul.gnb li {
-    align-items: center;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-}
-
-header .wrap ul.gnb li a{ 
-  padding: 0 20px;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 66px;
+   align-items: center;
 }
 
-header .wrap ul.gnb li a:hover {
-  color: #8e8e8e;
-}
-
-header .wrap ul li {
-  align-items: center;
-  /*! height: 100%; */
-}
-
-header .wrap .sublist{
-  position: absolute;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  padding: 40px 0 70px;
-  background-color: #eee;
-  display: grid;
-  grid-template-columns: calc((100% - 1080px) / 2) 313px auto;
-  display: none;
-}
-
-header .wrap .sublist h2{height: 100%;}
-
-header .wrap .sublist ul{grid-column: 3;}
-
-header .wrap .sublist ul li{}
-
-header .wrap .sublist ul li a{line-height: 1.7;display: block;}
-
-header .wrap ul.lang{
-  gap: 10px;
-  align-items: center;
-}
-
-header div.wrap ul.lang li:nth-child(1) a{  
-}
-
-header div.wrap ul.lang li a{
-  padding: 10px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-header div.wrap ul.lang li:nth-child(3) {
- 
-  height: 24px;
-  display: block;
-  
-  font-size: 0;
-}
-header div.wrap ul.lang li:nth-child(3) a{
-  padding:0;
-  font-size: 0;
-  width:24px;
-  height: 24px;
-  background-image: url(../img/customcenter.svg);
-  background-repeat: no-repeat;
-  background-size: 93%;
-  align-items: center;
-  display: flex;
-}
-
-header div.wrap ul.lang li:nth-child(3) a::after{
-  content:"고객센터";
-  font-size: 11px;
-  display: block;
-  width: max-content;
-  margin-top: 28px;
-  background-color: #d8d8d8;
-  padding: 3px;
-  border-radius: 7px;
-  display: none;
-}
-header div.wrap ul.lang li:nth-child(3) a:hover::after{
-  display: initial;
-  animation-name:fade; /*애니메이션 이름*/
-  animation-duration:1s; /*애니메이션 시간(초)*/
-}
-@keyframes fade{ /*fade이름의 애니메이션 설정*/
-  0%{ /* 처음 */
-    opacity: 0; /* 투명도 */
-    transform:translateY(30%);
-  }
-  100%{ /* 마지막 */
-    opacity: 1;
-    transform:translateY(0%);
-  }
-}
-
-header ul.lang a{
-  font-size: 0;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  width: 29px;
-  height: 8px;
-}
-
-header ul.lang a:hover{
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-.ham{
-  background-image: url(../img/menu.png);
-  display: block;
-  width: 27px;
-  height: 18px;
-  border: none;
-  background-size: contain;
-  position: fixed;
-  right: 74px;
-  top: 60px;
-  z-index: 1;
-  /*! display: none; */
-  background-repeat: no-repeat;
-}
-
-.ham.gnbShow{
-  display: block !important;
-}
-.ham.gnbShow.close{
-  
-  background-image: url(../img/close.png);
+.header .wrap ul li{
+   padding-left: 40px;
 }

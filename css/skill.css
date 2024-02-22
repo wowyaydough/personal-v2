@@ -1,136 +1,68 @@
-section#skill {
-  background-color: #272727;
-  position: relative;
-  overflow: hidden;
-  min-height: 600px;
-  z-index: -1;
+section#skill{
+   
 }
-
-section#skill::before{
-  content:"";
-  display: block;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: -350px;
-  left: calc(50% - 350px);
-}
-
-
 section#skill .wrap{
-  margin-bottom: 50px;
-  padding-top: 150px;
-  box-sizing: border-box;
 }
 
-section#skill div.wrap ul li{
-  content:"";
-  height: 79px;
-  margin-bottom: 10px;
-  width: calc(100% / 8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-  color: #C9D8E1;
-}
-section#skill div.wrap ul li::before{
-  content:"";
-  width: 60px;
-  height: 70px;
-  display: block;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  color: ;
-  transition:1s;
-}
-
-section#skill div.wrap ul li:nth-child(1)::before{
-  background-image: url(../img/skill/html.png);
-}
-section#skill div.wrap ul li:nth-child(2)::before{
-  background-image: url(../img/skill/css.png);
-  background-color:white;
-}
-section#skill div.wrap ul li:nth-child(3)::before{
-  background-image: url(../img/skill/jq.png)
-}
-section#skill div.wrap ul li:nth-child(4)::before{
-  background-image: url(../img/skill/js.png)
-}section#skill div.wrap ul li:nth-child(5)::before{
-  background-image: url(../img/skill/z.png)
-}
-section#skill div.wrap ul li:nth-child(6)::before{
-  background-image: url(../img/skill/ss.png)
-}section#skill div.wrap ul li:nth-child(7)::before{
-  background-image: url(../img/skill/w3.png);
-  background-color: white;
-}
-section#skill div.wrap ul li:nth-child(8)::before{
-  background-image: url(../img/skill/w2.png)
-}
-section#skill div.wrap ul li:nth-child(9)::before{
-  background-image: url(../img/skill/ps.png)
-}section#skill div.wrap ul li:nth-child(10)::before{
-  background-image: url(../img/skill/ai.png)
-}
-section#skill div.wrap ul li:nth-child(11)::before{
-  background-image: url(../img/skill/vv.png);
-    background-color: white;
-}section#skill div.wrap ul li:nth-child(12)::before{
-  background-image: url(../img/skill/f.png)
-}section#skill div.wrap ul li:nth-child(13)::before{
-  background-image: url(../img/skill/gg.png)
-}section#skill div.wrap ul li:nth-child(14)::before{
-  background-image: url(../img/skill/ov.png);
-  background-color: white;
-}
-
-section#skill .wrap::before {
-  content:"";
-  display: block;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: -140px;
-  left: calc(50% - 140px);
-}
-
-section#skill .wrap ul.skills{
-  
-  flex-wrap: wrap;
-  display: flex;
-  padding-top: 70px;
-}
-
-section#skill .wrap>*{
-  
-}
 section#skill .wrap h2{
-
+  display: none;
 }
-section#skill .wrap p{
+
+section#skill .wrap .skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#skill .wrap .skill>div{
+  
+  /*! width: calc(100% / 2); */
+}
+section#skill .wrap .skill .skill_left{
+  color: white;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 178px;
+}
+
+section#skill .wrap .skill .skill_right{
+  display: flex;
+}
+section#skill .wrap .skill .skill_right h3{
+  
+  margin-top: -50px;
+  font-size: 28px;
+}
+section#skill .wrap .skill .skill_right div{
+  color: white;
+  border: 1px solid #eee;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#skill .wrap .skill .skill_right .boxA{
+  margin-right: 27px;
+}
+section#skill .wrap .skill .skill_right .boxB{
   
 }
-section#skill::after{
-  content:"";
-  display: block;
-  width: 490px;
-  height: 490px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: -245px;
-  left: calc(50% - 245px);
-}  
 
-section#skill .wrap h2.h2 span.block {
+section#skill .wrap .skill .skill_right div article{
+  margin-top: 79px;
 
+}
+section#skill .wrap .skill .skill_right div.boxB article{
+    display: flex;
+  justify-content: space-between;
+  width: 83%;
+}
+section#skill .wrap .skill .skill_right .boxA article img{
+  
+  padding-left: 10px;
 }

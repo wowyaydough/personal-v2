@@ -1,89 +1,164 @@
-section#portfolio {
-  background-color: black;
-  padding-top: 0px;
-}
-section#portfolio .wrap {
+section#portfolio{
+  
+  background-color: #1b1a1a;
 }
 
-section#portfolio .wrap>*{
-  
+section#portfolio .wrap{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
 }
-.slick-list{
-  margin: 0 15px !important;
-}
-section#portfolio .wrap ul.flex{
-  
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
+
 section#portfolio .wrap h2{
-  
-  color: white;
+  transform: rotate(270deg);
 }
-section#portfolio .wrap p{
+section .wrap>div{
+    display: grid;
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(4,auto);
+    margin-top: 43px;
+    row-gap: 27px;
+}
+section#portfolio .wrap .list{
   display: flex;
-  justify-content: right;
-  color: white;
-  font-weight: 300;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-top: 34px;
 }
-
-section#portfolio .text>p{
-  color: #3356b0;
-  font-weight: bold;
-}
-section#portfolio::after{
-  
-  width: 100%;
-}  
-
-section#portfolio .wrap ul.board>li{
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+section#portfolio .wrap .detail{
+  width: 312px;
+  height: 212px;
   display: flex;
-  width: 250px;
+  flex-direction: column;
 }
-section#portfolio .wrap ul.board > li>a{
-  overflow: hidden;
+section#portfolio .wrap .detail1.hide{
+  display: none;
 }
-section#portfolio .wrap ul li img{
-  height: 127px;
-  box-shadow: 0 10px 10px #eee;
-  transition:1s;
+section#portfolio .wrap .detail.hide{
+  
+  display: none;
+}
+section#portfolio .wrap .detail.detailShow{
+  display: flex !important;
+}
+section#portfolio .wrap .list a{
+  font-size: 17px;
+}
 
+section#portfolio .wrap .left{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
-section#portfolio .wrap ul li a img:hover {
-  transform:scale(1.2);
 
+section#portfolio .wrap div .left h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c9c9c9;
+  font-size: 20px;
+  margin-top: -8px;
+  margin-bottom: 4px;
+  transform: initial;
 }
 
-section#portfolio .wrap .text{
+
+section#portfolio .detail::before{
+  content:"";
+  width: 161px;
+  height: 91px;
+  display: block;
+  background-size: contain;
+}
+section#portfolio .detail1::before{
+  background-image: url(../img/portfolio/accuniq.png);
+ }
+section#portfolio .detail2:before{
+  background-image: url(../img/portfolio/lpoint.png);
+ }
+section#portfolio .detail3:before{
+  background-image: url(../img/portfolio/lionheart.png);
+ }
+section#portfolio .detail4:before{
+  background-image: url(../img/portfolio/samine.png);
+ }
+section#portfolio .detail5:before{
+  background-image: url(../img/portfolio/carrot.png);
+ }
+section#portfolio .detail6:before{
+  background-image: url(../img/portfolio/BR.png);
+ }
+section#portfolio .detail7:before{
+  background-image: url(../img/portfolio/Tooniverse.png);
+ }
+section#portfolio .detail8:before{
+  background-image: url(../img/portfolio/Etude.png);
+ }
+section#portfolio .detail9:before{
+  background-image: url(../img/portfolio/hbpaper.png);
+ }
+section#portfolio .detail10:before{
+  background-image: url(../img/portfolio/Asty.png);
+ }
+section#portfolio .detail11:before{
+  background-image: url(../img/portfolio/ISTEC.png);
+ }section#portfolio .detail12:before{
+  background-image: url(../img/portfolio/hitejinro.png);
+ }
+section#portfolio .wrap div .left p{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8b8b8b;
+}
+section#portfolio .wrap div .left a{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px;
+  display: block;
+  width: 16%;
+  font-size: 14px;
   color: white;
-  padding-top: 10px;
-  text-align: center;
+  margin-top: 6px;
 }
-section#portfolio .wrap .text h3{
-  padding: 10px 0;
-  color: #cacaca;
-  text-align: left;
-  font-weight: 300;
+section#portfolio .wrap .right{
+  
+  height: 439px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 531px;
 }
-section#portfolio .wrap .text h3 a{
-  color: white;
+section#portfolio .wrap .detail1 .right{
+  background-image: url(../img/portfolio/accuniq.png);
 }
-
-section#portfolio .wrap .text ul{
-  color: lightgray;
-  text-align: left;
-  padding-left: 10px;
+section#portfolio .wrap .detail2 .right{
+  background-image: url(../img/portfolio/lpoint.png);
 }
-
-section#portfolio .wrap .text ul li{
-  color: lightgray;
-  line-height: 1.4;
+section#portfolio .wrap .detail3 .right{
+  background-image: url(../img/portfolio/asty.png);
 }
-section#portfolio .wrap h2.h2 span.block {
-
+section#portfolio .wrap .detail4 .right{
+  background-image: url(../img/portfolio/lionheart.png);
+}
+section#portfolio .wrap .detail5 .right{
+  background-image: url(../img/portfolio/samine.png);
+}
+section#portfolio .wrap .detail6 .right{
+  background-image: url(../img/portfolio/ISTEC.png);
+}
+section#portfolio .wrap .detail7 .right{
+  background-image: url(../img/portfolio/Carrot.png);
+}
+section#portfolio .wrap .detail8 .right{
+  background-image: url(../img/portfolio/BR.png);
+}
+section#portfolio .wrap .detail9 .right{
+  background-image: url(../img/portfolio/Tooniverse.png);
+}
+section#portfolio .wrap .detail10 .right{
+  background-image: url(../img/portfolio/Etude.png);
+}
+section#portfolio .wrap .detail11 .right{
+  background-image: url(../img/portfolio/HBpaper.png);
+}
+section#portfolio .wrap .detail12 .right{
+  background-image: url(../img/portfolio/hitejinro.png);
 }
