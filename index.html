@@ -1,208 +1,251 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-yo DaY!</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <!-- //구글폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- 구글폰트// -->
-    <!-- pretendard -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <!-- https://ionic.io/ionicons/v1 -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
-    <!--  -->
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skill.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/aside.css">
-    <link rel="stylesheet" href="css/footer.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>A-yo DaY!</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/font.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/title.css">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/portfolio.css">
+   <link rel="stylesheet" href="css/skill.css">
 
-     <!-- 제이쿼리 연결 -->
-     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
-     
-<!-- slick -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.autoplay').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed:3000
-});
-    });
-    </script>
-<script>
-    $(document).ready(function(){
+   <!-- 웹폰트 -->
+   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-        // 햄버거버튼
-        $(".ham").click(function(){
-            $("header .wrap ul.gnb").toggleClass("gnbSpread");
-            $(this).toggleClass("close");
-        });
+   <!-- 제이쿼리 연결 -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
 
-        // 스크롤 이벤트 gnb 클릭
-        let offsetA = $("section#about").offset();
-        let offsetS = $("section#skill").offset();
-        let offsetP = $("section#portfolio").offset();
-        let offsetC = $("section#contact").offset();
-        $("header .wrap ul.gnb li:nth-child(1) a").click(function(){
-                $("html").animate({scrollTop: offsetA.top},500);
-                return false;
-        });
-        $("header .wrap ul.gnb li:nth-child(2) a").click(function(){
-                $("html").animate({scrollTop: offsetS.top},500);
-                return false;
-        });
-        $("header .wrap ul.gnb li:nth-child(3) a").click(function(){
-                $("html").animate({scrollTop: offsetP.top},500);
-                return false;
-        });
-        $("header .wrap ul.gnb li:nth-child(4) a").click(function(){
-                $("html").animate({scrollTop: offsetC.top},500);
-                return false;
-        });
+   <!-- // 헤더 메뉴  -->
+   <script type="text/javascript">
+      $(document).ready(function(){
+         
+         let offsetA = $("section#about").offset();
+         $(".header ul li:nth-child(1) a").click(function(){
+            $("html").animate({scrollTop: offsetA.top},500);  
+            return false;
+         });
+         let offsetB = $("section#skill").offset();
+         $(".header ul li:nth-child(2) a").click(function(){
+            $("html").animate({scrollTop: offsetB.top},500);
+            return false;
+         });
+         let offsetC = $("section#portfolio").offset();
+         $(".header ul li:nth-child(3) a").click(function(){
+            $("html").animate({scrollTop: offsetC.top},500);
+            return false;
+         });
+      });
+   </script>
 
-            // 스크롤이벤트 햄버거
-        $(window).scroll(function(){
-            if($(window).scrollTop()>=$("section#skill").height()){
-                    $(".ham").addClass("gnbShow");
-                    $("ul.gnb").hide();
-                }
-            else{
-                $(".ham").removeClass("gnbShow");
-                $("ul.gnb").show();
-            }
-        });
-    });
-</script>
+
 </head>
 <body>
-    <!-- 상단영역 -->
-    <header>
-        <div class="wrap">
-            <h1>
-                <a href="">A-yo DaY!</a>
-            </h1>
-            <ul class="gnb flex">
-                <li><a href="">about</a></li>
-                <li><a href="">skill</a></li>
-                <li><a href="">porfolio</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </div>
-        <a class="ham">
-        </a>
-    </header>
-    <!-- 타이틀영역 -->
-         <div id="title">
-              <div class="wrap flex column">
-             
+   <!-- header -->
+   <div class="header">
+      <div class="wrap flex between">
+         <a href="" class="logo">A-yo DaY!</a>
+         <ul class="flex">
+            <li><a href="">about</a></li>
+            <li><a href="">skill</a></li>
+            <li><a href="">portfolio</a></li>
+         </ul>
+      </div>
+   </div>
+   <main>
+   <!-- title -->
+   <div id="title" class="vh100">
+      <div class="wrap flex column">
+        <h2>안녕하세요 <span class="block"></span>
+            <div class="inner_text">
+            코딩에 진심을 다하는 <span class="textC">웹퍼블리셔 황도연</span> 입니다.
+            </div>
+        </h2>
+       </div>
+  </div>
+
+   </section>
+   <!-- about -->
+   <section id="about" class="vh100">
+      <div class="wrap">
+         <h2>about</h2>
+         <div class="about flex">
+            <div class="about_left">
+               <article>
+                  <img src="img/title11.png" alt="개인사진">
+               </article>
+            </div>
+            <div class="about_right">
+               <p class="textBold">Education</p><br>
+               <p>2023.11.01~2024.02.20</p>
+               <p>국비지원 UI/UX 웹디자인 과정 수료</p><br><br>
+               <p class="textBold">License</p><br>
+               <p>운전면허 2종 취득</p>
+               <p>TOEIC 770점</p><br><br>
+               <p class="textBold">Contact</p><br>
+               <p>makemyownwaysecond@gmaill.com</p>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- skill -->
+   <section id="skill" class="vh100">
+      <div class="wrap">
+         <h2>skill</h2>
+         <div class="skill flex">
+            <div class="skill_left">
+               SKILLS
+            </div>
+            <div class="skill_right">
+               <div class="boxA">
+                  <h3>Web Design</h3>
+                  <article>
+                     <img src="img/ps.png" alt="photoshop">
+                     <img src="img/ai.png" alt="illustrator">
+                  </article>
                </div>
-          </div>
-    <!-- 메인영역 -->
-    <main>
-    <!--  ABOUT -->
-    <section id="about" class="paddingT50 paddingB50 vh100">
-        <div class="wrap flex h100">
-            <img src="https://images.unsplash.com/photo-1665686306574-1ace09918530?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fCVFQyU5NyVBQyVFQyU5RSU5MHxlbnwwfHwwfHx8MA%3D%3D" alt="여자사진">
-            <div class="aboutC flex column">
-                <h2 class="h2">
-                    ABOUT<span class="block"></span>
-                </h2>
-                <ul class="flex column">
-                    <li class="h6">이름 : 황도연</li>
-                    <li class="h6">성별 : 여자</li>
-                    <li class="h6">교육과정 : 이젠 모란 웹디자인 퍼블리셔 5개월 수료</li>      
-                </ul>
-            </div>    
-        </div>
-    </section>
-        <!-- SKILL -->
-        <section id="skill" class="paddingT50 paddingB50 vh100">
-            <div class="wrap flex column h100">
-                <h2 class="h2 color_w">
-                    SKILL <span class="block"></span>
-                    
-                </h2>
-                <p class="p color_w">
-                    5개월간 배우고 익힌 스킬입니다.<span class="block"></span>  
-                </p>
-                <ul class="skills">
-                    <li class="color_w">HTML5</li>
-                    <li class="color_w">CSS3</li>
-                    <li class="color_w">jQuery</li>
-                    <li class="color_w">Javascript</li>
-                    <li class="color_w">젠코딩</li>
-                    <li class="color_w">SASS</li>
-                    <li class="color_w">웹표준</li>
-                    <li class="color_w">웹접근성</li>
-                    <li class="color_w">Photoshop</li>
-                    <li class="color_w">Illustrator</li>
-                    <li class="color_w">VisualCode Studio</li>
-                    <li class="color_w">FireFox 검사기</li>
-                    <li class="color_w">Google Drive</li>
-                    <li class="color_w">Kakao Oven</li>
-                 </ul>
+               <div class="boxB">
+                  <h3>Web Publishing</h3>
+                  <article>
+                     <img src="img/html.png" alt="html">
+                     <img src="img/css.png" alt="css">
+                     <img src="img/jquery.png" alt="jQuery">
+                  </article>
+               </div>
             </div>
-        </section>
-    
-        <!-- portfolio -->
-        <section id="portfolio" class="flex paddingT50 paddingB50 vh100">
-            <div class="wrap flex column center vh100">
-                <h2 class="h2">
-                    PORTFOLIO<span class="block"></span>
-                </h2>
-                <p class="h6">
-                    12 items<span class="block"></span>
-                </p>
-                <div class="autoplay"> 
-                    <img src="img/slick/accuniq.png" alt="accuniq">
-                    <img src="img/slick/asty.png" alt="asty">
-                    <img src="img/slick/lionheart.png" alt="lionheart">
-                    <img src="img/slick/lpoint.png" alt="lpoint">
-                    <img src="img/slick/semine.png" alt="samine">
-                    <img src="img/slick/ISTEC.png" alt="ISTEC">
-                    <img src="img/slick/Carrot.png" alt="Carrot">
-                    <img src="img/slick/hbpaper_re.png" alt="hbpaper">
-                    <img src="img/slick/BR.png" alt="baskinrobbins">
-                    <img src="img/slick/Tooniverse.png" alt="Tooniverse">
-                    <img src="img/slick/hitejinro.png" alt="hitejinro">
-                    <img src="img/slick/Etude.png" alt="Etude">
-                </div>
-            </div>
-        </section> 
-    
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="wrap h100 flex column center">
-                <h2 class="h2">CONTACT</h2>
-                <li>Instagram : ayodough</li>
-                <li>E-mail : makemyownwaysecond@gmail.com </li>
-            </div>
-        </section>
-    </main>
+         </div>
+      </div>
 
-    <!-- 우측슬라이드아이콘 -->
-  
-    <!-- 하단영역 -->
-    <footer>
-        <div class="wrap">
-          @Copyright all reserved.
-        </div>
-    </footer>
+   </section>
+   <!-- portfolio -->
+   <section id="portfolio" class="vh100">
+      <div class="wrap">
+         <h2>portfolio</h2>
+            <div>
+               <div class="detail detail1">
+                  <div class="left">
+                     <h2>accuniq</h2>
+                     <p>사용 기술 : HTML, CSS</p>
+                     <p>작업기간 : 2023.11.27~2023.12.21 </p>
+                     <a href="https://wowyaydough.github.io/pf1-accuniq/">바로가기</a>
+                  </div>
+               </div>
+               <div class="detail detail2">
+                  <div class="left">
+                     <h2>엘포인트</h2>
+                     
+                     <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
+                     <p>작업기간 : 2023.11.14~2024.1.19</p>
+                     <a href="https://wowyaydough.github.io/pf2-Lpoint/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail3">
+                  <div class="left">
+                     <h2>라이온하트</h2>
+                     
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>작업기간 : 2023.11.13~2024.11.29</p>
+                     <a href="https://wowyaydough.github.io/LionHeart/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail4">
+                  <div class="left">
+                     <h2>세미네</h2>
+                     
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>작업기간 : 2024.12.05~2024.12.07</p>
+                     <a href="https://wowyaydough.github.io/Semine/">바로가기</a>
+                  </div>
+                  
+               </div>
+               
+               <div class="detail detail5">
+                  <div class="left">
+                     <h2>캐롯손해보험</h2>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>작업기간 : 2023.12.19~2024.02.20</p>
+                     <a href="https://wowyaydough.github.io/Carrot/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail6">
+                  <div class="left">
+                     <h2>배스킨라빈스</h2>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>작업기간 : 2023.12.28~2024.01.10</p>
+                     <a href="https://wowyaydough.github.io/BaskinRobbins/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail7">
+                  <div class="left">
+                     <h2>투니버스</h2>
+                     <p>사용기술 : HTML, CSS, 제이쿼리</p>
+                     <p>작업기간 : 2023.01.12~2024.01.17</p>
+                     <a href="https://wowyaydough.github.io/Tooniverse/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail8">
+                  <div class="left">
+                     <h2>에뛰드</h2>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>작업기간 : 2023.02.08~2024.02.15</p>
+                     <a href="https://wowyaydough.github.io/Etude/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail9">
+                  <div class="left">
+                     <h2>HB페이퍼</h2>
+                     <p>사용기술 : HTML, CSS, 반응형</p>
+                     <p>작업기간 : 2023.12.29~2024.01.24</p>
+                     <a href="https://wowyaydough.github.io/pf3-hbpaper/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail10">
+                  <div class="left">
+                     <h2>아스티</h2>
+                     <p>사용기술 : HTML, CSS, 제이쿼리</p>
+                     <p>작업기간 : 2024.01.04~2024.01.24</p>
+                     <a href="https://wowyaydough.github.io/Asty/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail11">
+                  <div class="left">
+                     <h2>ISTEC</h2>
+                     <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
+                     <p>작업기간 : 2023.12.18~2024.02.15</p>
+                     <a href="https://wowyaydough.github.io/ISTEC/">바로가기</a>
+                  </div>
+                  
+               </div>
+               <div class="detail detail12">
+                  <div class="left">
+                     <h2>하이트진로</h2>
+                     <p>사용기술 : HTML, CSS, 제이쿼리</p>
+                     <p>작업기간 : 2024.01.22~2024.02.22</p>
+                     <a href="https://wowyaydough.github.io/pf4_hitejinro/">바로가기</a>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </section>
 
+   </section>
+   </main>   
+   <!-- footer -->
+   <footer>
+
+   </footer>
 </body>
 </html>
