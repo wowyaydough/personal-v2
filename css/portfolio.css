@@ -1,0 +1,164 @@
+section#portfolio{
+  
+  background-color: #1b1a1a;
+}
+
+section#portfolio .wrap{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+}
+
+section#portfolio .wrap h2{
+  transform: rotate(270deg);
+}
+section .wrap>div{
+    display: grid;
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(4,auto);
+    margin-top: 43px;
+    row-gap: 27px;
+}
+section#portfolio .wrap .list{
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+section#portfolio .wrap .detail{
+  width: 312px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+}
+section#portfolio .wrap .detail1.hide{
+  display: none;
+}
+section#portfolio .wrap .detail.hide{
+  
+  display: none;
+}
+section#portfolio .wrap .detail.detailShow{
+  display: flex !important;
+}
+section#portfolio .wrap .list a{
+  font-size: 17px;
+}
+
+section#portfolio .wrap .left{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+section#portfolio .wrap div .left h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c9c9c9;
+  font-size: 20px;
+  margin-top: -8px;
+  margin-bottom: 4px;
+  transform: initial;
+}
+
+
+section#portfolio .detail::before{
+  content:"";
+  width: 161px;
+  height: 91px;
+  display: block;
+  background-size: contain;
+}
+section#portfolio .detail1::before{
+  background-image: url(../img/portfolio/accuniq.png);
+ }
+section#portfolio .detail2:before{
+  background-image: url(../img/portfolio/lpoint.png);
+ }
+section#portfolio .detail3:before{
+  background-image: url(../img/portfolio/lionheart.png);
+ }
+section#portfolio .detail4:before{
+  background-image: url(../img/portfolio/samine.png);
+ }
+section#portfolio .detail5:before{
+  background-image: url(../img/portfolio/Carrot.png);
+ }
+section#portfolio .detail6:before{
+  background-image: url(../img/portfolio/BR.png);
+ }
+section#portfolio .detail7:before{
+  background-image: url(../img/portfolio/Tooniverse.PNG);
+ }
+section#portfolio .detail8:before{
+  background-image: url(../img/portfolio/Etude.PNG);
+ }
+section#portfolio .detail9:before{
+  background-image: url(../img/portfolio/HBpaper.png);
+ }
+section#portfolio .detail10:before{
+  background-image: url(../img/portfolio/asty.png);
+ }
+section#portfolio .detail11:before{
+  background-image: url(../img/portfolio/ISTEC.png);
+ }section#portfolio .detail12:before{
+  background-image: url(../img/portfolio/hitejinro.PNG);
+ }
+section#portfolio .wrap div .left p{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8b8b8b;
+}
+section#portfolio .wrap div .left a{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px;
+  display: block;
+  width: 16%;
+  font-size: 14px;
+  color: white;
+  margin-top: 6px;
+}
+section#portfolio .wrap .right{
+  
+  height: 439px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 531px;
+}
+section#portfolio .wrap .detail1 .right{
+  background-image: url(../img/portfolio/accuniq.png);
+}
+section#portfolio .wrap .detail2 .right{
+  background-image: url(../img/portfolio/lpoint.png);
+}
+section#portfolio .wrap .detail3 .right{
+  background-image: url(../img/portfolio/asty.png);
+}
+section#portfolio .wrap .detail4 .right{
+  background-image: url(../img/portfolio/lionheart.png);
+}
+section#portfolio .wrap .detail5 .right{
+  background-image: url(../img/portfolio/samine.png);
+}
+section#portfolio .wrap .detail6 .right{
+  background-image: url(../img/portfolio/ISTEC.png);
+}
+section#portfolio .wrap .detail7 .right{
+  background-image: url(../img/portfolio/Carrot.png);
+}
+section#portfolio .wrap .detail8 .right{
+  background-image: url(../img/portfolio/BR.png);
+}
+section#portfolio .wrap .detail9 .right{
+  background-image: url(../img/portfolio/Tooniverse.png);
+}
+section#portfolio .wrap .detail10 .right{
+  background-image: url(../img/portfolio/Etude.png);
+}
+section#portfolio .wrap .detail11 .right{
+  background-image: url(../img/portfolio/HBpaper.png);
+}
+section#portfolio .wrap .detail12 .right{
+  background-image: url(../img/portfolio/hitejinro.png);
+}
