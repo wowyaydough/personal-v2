@@ -26,22 +26,23 @@ section#about .about{
   align-items: center;
   margin-top: 88px;
 }
-section#about .about_left::before{
-  content:"";  
-  border: 3px solid #9c9c9c;
-  display: block;
-  width: 361px;
-  height: 361px;
-  position: absolute;
-  border-radius: 50%;
-  left: -9px;
-  top: -11px;
-  z-index: -1;
+section .wrap>div{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(5,1fr);
+    margin-top: 43px;
+    row-gap: 27px;
+
 }
+
+
 section#about .about_left{
   margin-right: 164px;
   position: relative;
   z-index: 1;
+}
+section#about .about_left article{
+  
 }
 section#about .about_left p{
   
