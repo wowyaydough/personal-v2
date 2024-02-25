@@ -64,10 +64,23 @@ section#portfolio .wrap div .left h2{
 
 section#portfolio .detail::before{
   content:"";
-  width: 161px;
-  height: 91px;
+  width: 178px;
+  height: 100px;
   display: block;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
+}
+section#portfolio .detail:hover::before{
+  animation-name:slide_down;
+  animation-duration:10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: lenear;
+}
+@keyframes slide_down{
+  100%{
+    background-position:bottom;
+  }
+  
 }
 section#portfolio .detail1::before{
   background-image: url(../img/portfolio/accuniq.png);
