@@ -43,6 +43,12 @@ section#about .about_left{
   position: relative;
   z-index: 1;
 }
+section#about .about_left p{
+  
+  color: white;
+  line-height: 1.5;
+  padding-top: 15px;
+}
 section#about .about_right h3{
   
   color: white;
