@@ -1,0 +1,27 @@
+@media screen and (max-width:386px){
+  
+  .wrap{
+    
+  max-width: 385px;
+  padding: 0 15px !important;
+  }
+/*  헤더   */
+  .header{
+    
+  margin: 0;
+  padding-top: 30px;
+  }
+  .header .wrap{
+  margin: 0;
+  }
+  .header .wrap a.logo{
+    
+  width: 70px;
+  height: 50px;
+  background-repeat: no-repeat;
+  }
+  
+  .header .wrap ul{
+    display: none;
+  }
+}
