@@ -4,14 +4,16 @@ section#about{
   justify-content: center;
   align-items: center;
   background-color: #212121;
+  height: 80vh;
 }
-
+section#about > .wrap{
+  width: 52%;
+}
 section>.wrap{
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 52%;
 }
 section .wrap>h2{
   font-size: 60px;
