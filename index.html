@@ -51,6 +51,21 @@
             $("html").animate({scrollTop: offsetC.top},500);
             return false;
          });
+
+   // <!-- 반응형 -->
+         //스크롤 - 헤더
+         $(window).scroll(function(){
+	         if($(window).scrollTop()<125){
+                  $(".header").addClass("blackBG");
+            }
+            console.log($(window).scrollTop());
+         });
+
+         // 햄버거 버튼
+         $(".ham").click(function(){
+            $(".header .wrap ul").toggleClass("click");
+            return false;
+         });
       });
    </script>
 
