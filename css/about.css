@@ -1,0 +1,123 @@
+section#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+section#about > .wrap{
+  width: 52%;
+}
+section>.wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .wrap>h2{
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+section#about .about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+}
+section .wrap>div{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(5,1fr);
+    margin-top: 43px;
+    row-gap: 27px;
+}
+
+.animation_about{
+  opacity: 0;
+}
+section .wrap .animation_about.show{
+  animation-name:sliding_right_to_left;
+  animation-duration:1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.animation1{
+  animation-delay: 0.2s;
+}
+.animation2{
+  animation-delay: 0.4s;
+}
+@keyframes sliding_right_to_left{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatex(200%);
+  }
+}
+section#about .about_left{
+  margin-right: 164px;
+  position: relative;
+  z-index: 1;
+  width: 426px;
+}
+section#about .about_left article{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#about .about_left p{
+  color: white;
+  line-height: 1.5;
+  padding-top: 15px;
+  text-align: center;
+}
+section#about .about_left article img{
+  position: relative;
+  z-index: -1;
+  /*! animation-name: circle; */
+}
+@keyframes circle{
+  0%{
+  transform:rotateX(360deg)
+    opacity:1;
+  }
+  30%{
+    transform:rotateX(360deg)
+      opacity:1;
+  }
+  60%{
+    transform:rotateX(180deg)
+      opacity:1;
+  }
+  100%{
+    transform:rotateX(0deg)
+      opacity:1;
+  }
+  
+}
+section#about .about_right h3{
+  color: white;
+  font-size: 40px;
+}
+section#about .about_right p{
+  color: white;
+  line-height: 1.5;
+}
+section#about .about_right p.textBold{
+  font-size: 30px;
+}
+
+@keyframes sliding_right_to_left{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatex(200%);
+  }
+}

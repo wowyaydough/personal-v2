@@ -1,0 +1,140 @@
+section#skill{
+   
+}
+section#skill .wrap{
+}
+
+section#skill .wrap>h2{
+  display: none;
+}
+
+section#skill .wrap .skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73%;
+  margin: 0 auto;
+}
+.animation_skill{
+  opacity: 0;
+}
+section .wrap .animation_skill.show{
+  animation-name:sliding_right_to_left;
+  animation-duration:1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.animation1{
+  animation-delay: 0.2s;
+}
+.animation2{
+  animation-delay: 0.4s;
+}
+@keyframes sliding_right_to_left{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatex(200%);
+  }
+}
+section#skill .wrap .skill>div{
+  
+  width: calc(100% / 2);
+}
+section#skill .wrap .skill .skill_left{
+  color: white;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section#skill .wrap .skill .skill_left>h2{
+  
+  padding-bottom: 40px;
+}
+section#skill .wrap .skill .skill_left p{
+  
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #999;
+}
+section#skill .wrap .skill .skill_right{
+  display: flex;
+}
+section#skill .wrap .skill h3{
+  font-size: 28px;
+  text-align: center;
+  color: white;
+}
+section#skill .wrap .skill .skill_right .boxA h3{
+  
+  margin-top: 22px;
+}
+section#skill .wrap .skill h3{ 
+  margin-bottom: 15px;
+}
+section#skill .wrap .skill .skill_right article{
+  color: white;
+  border: 1px solid #eee;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+section#skill .wrap .skill .skill_right .boxA{
+  margin-right: 45px;
+}
+section#skill .wrap .skill .skill_right .boxA article>div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  width: 61%;
+  margin-bottom: 20px;
+}
+section#skill .wrap .skill .skill_right .boxA article > div p{
+  grid-column: 1 / span 2;
+  text-align: right;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+section#skill .wrap .skill .skill_right .boxA article > div p em{
+  
+  font-size: 22px;
+  line-height: 1.7;
+}
+section#skill .wrap .skill .skill_right .boxB{
+  
+}
+section#skill .wrap .skill .skill_right .boxB article>div{
+  display: grid;
+  grid-template-rows: 27px 158px;
+  grid-template-columns: auto auto;
+  width: 80%;
+}
+section#skill .wrap .skill .skill_right .boxB article>div p{
+  
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  margin-top: 40px;
+  text-align: right;
+  line-height: 1.3;
+}
+section#skill .wrap .skill .skill_right .boxB article > div p em{
+  
+  font-size: 22px;
+  line-height: 1.7;
+}
+section#skill .wrap .skill .skill_right div.boxB article{
+    display: flex;
+    flex-direction: column;
+}
+section#skill .wrap .skill .skill_right .boxA article img{
+  
+  padding-left: 10px;
+}
